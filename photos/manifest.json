@@ -1,0 +1,603 @@
+{
+  "version": 1,
+  "photos": [
+    {
+      "id": "tl-01",
+      "source": "puget-sound/BK7A0579.jpg",
+      "title": "Blue Hour Marina",
+      "description": "Covered marina slips reflected in calm water at blue hour",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "tl-02",
+      "source": "puget-sound/BK7A0588.jpg",
+      "title": "Ferry at Dusk",
+      "description": "Washington State ferry beyond a waterfront pier at dusk",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "tl-03",
+      "source": "puget-sound/BK7A0591.jpg",
+      "title": "Harbor Afterglow",
+      "description": "Quiet marina channel framed by autumn leaves after sunset",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "tl-04",
+      "source": "puget-sound/BK7A0600.jpg",
+      "title": "Fish and Ferry",
+      "description": "Metal fish sculptures and a ferry silhouetted against a pink evening sky",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "tl-05",
+      "source": "puget-sound/BK7A0602.jpg",
+      "title": "Olympic Afterglow",
+      "description": "Fishing pier and Olympic Mountains beneath a vivid golden sunset",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 5
+        }
+      ],
+      "featuredOrder": 1
+    },
+    {
+      "id": "tl-06",
+      "source": "puget-sound/BK7A0605.jpg",
+      "title": "Pier Into Evening",
+      "description": "Vertical view of a fishing pier extending over dark water at sunset",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "tl-07",
+      "source": "puget-sound/BK7A0616.jpg",
+      "title": "Watching the Horizon",
+      "description": "Visitors watch the Olympic Mountain skyline from a waterfront pier",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "tl-08",
+      "source": "puget-sound/BK7A0621.jpg",
+      "title": "Tethered",
+      "description": "A weathered buoy tied to a pier railing with mountains beyond",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "tl-09",
+      "source": "puget-sound/BK7A0622.jpg",
+      "title": "Safe Harbor",
+      "description": "Sailboats sheltered behind a rock breakwater in evening light",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "tl-10",
+      "source": "puget-sound/BK7A0629.jpg",
+      "title": "Night Fishing",
+      "description": "People fishing from a pier beneath an orange sunset",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "tl-11",
+      "source": "puget-sound/BK7A0632.jpg",
+      "title": "Casting at Last Light",
+      "description": "Anglers silhouetted against golden water and distant mountains",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "tl-12",
+      "source": "puget-sound/BK7A0636.jpg",
+      "title": "Last Light on the Sound",
+      "description": "Olympic Mountains silhouetted beyond glowing water after sunset",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 12
+        }
+      ],
+      "featuredOrder": 2,
+      "hero": true
+    },
+    {
+      "id": "tl-13",
+      "source": "puget-sound/BK7A0641.jpg",
+      "title": "Waterfront Field Notes",
+      "description": "Marine wildlife display illuminated beside the darkening water",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "tl-14",
+      "source": "puget-sound/BK7A0642.jpg",
+      "title": "Shelter at Sundown",
+      "description": "Lit pier shelter against a deep blue and orange horizon",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "tl-15",
+      "source": "puget-sound/BK7A0645.jpg",
+      "title": "Marina Nocturne",
+      "description": "Boats and masts reflected inside a marina after sunset",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "tl-16",
+      "source": "puget-sound/BK7A0647.jpg",
+      "title": "Pier Lights",
+      "description": "Illuminated fishing pier and mountain silhouettes at twilight",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "tl-17",
+      "source": "puget-sound/BK7A0650.jpg",
+      "title": "Copper Reflections",
+      "description": "Warm harbor lights reflected among covered marina slips",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "tl-18",
+      "source": "puget-sound/BK7A0688.jpg",
+      "title": "City Between Water and Mountains",
+      "description": "Seattle stadiums and waterfront seen against the Olympic Mountains",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "tl-19",
+      "source": "puget-sound/BK7A0716-Edit.jpg",
+      "title": "Needle in the Afterglow",
+      "description": "Space Needle silhouetted against fiery clouds and Olympic peaks",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 19
+        }
+      ],
+      "featuredOrder": 3
+    },
+    {
+      "id": "tl-20",
+      "source": "puget-sound/BK7A0759-Edit.jpg",
+      "title": "Covered for the Night",
+      "description": "Covered car parked along a quiet residential street at night",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "tl-21",
+      "source": "puget-sound/BK7A1058.jpg",
+      "title": "Moss Portal",
+      "description": "Moss-covered concrete passage hidden in autumn woodland",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "tl-22",
+      "source": "puget-sound/BK7A1059.jpg",
+      "title": "Room in the Rock",
+      "description": "Bench inside a dark stone shelter opening toward the forest",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "tl-23",
+      "source": "puget-sound/BK7A1068.jpg",
+      "title": "Through to the Water",
+      "description": "Autumn pond seen through a small opening in a dark stone wall",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 23
+        }
+      ]
+    },
+    {
+      "id": "tl-24",
+      "source": "puget-sound/BK7A1084.jpg",
+      "title": "Crossing the Sound",
+      "description": "Washington State ferry passing a rocky shoreline beneath layered clouds",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 24
+        }
+      ]
+    },
+    {
+      "id": "tl-25",
+      "source": "puget-sound/BK7A1086.jpg",
+      "title": "Break in the Weather",
+      "description": "Sunbeams breaking through storm clouds over Puget Sound",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 25
+        }
+      ],
+      "featuredOrder": 4
+    },
+    {
+      "id": "tl-26",
+      "source": "puget-sound/BK7A1088.jpg",
+      "title": "Low Flight",
+      "description": "A gull flying low over textured gray-gold water",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 26
+        }
+      ]
+    },
+    {
+      "id": "tl-27",
+      "source": "puget-sound/BK7A1106.jpg",
+      "title": "Waiting for the Ferry",
+      "description": "Solitary figure on a dock watching a ferry cross under storm clouds",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 27
+        }
+      ]
+    },
+    {
+      "id": "tl-28",
+      "source": "puget-sound/BK7A1109.jpg",
+      "title": "Weather Over the Sound",
+      "description": "Birds and shafts of sunlight over a dark island shoreline",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 28
+        }
+      ]
+    },
+    {
+      "id": "tl-29",
+      "source": "puget-sound/BK7A1127.jpg",
+      "title": "Empty Bench, Open Water",
+      "description": "Empty waterfront bench facing Puget Sound beneath moving clouds",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 29
+        }
+      ]
+    },
+    {
+      "id": "tl-30",
+      "source": "puget-sound/BK7A1129.jpg",
+      "title": "Making a Portrait",
+      "description": "Photographer making a waterfront portrait beneath dramatic clouds",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 30
+        }
+      ]
+    },
+    {
+      "id": "tl-31",
+      "source": "puget-sound/BK7A1133.jpg",
+      "title": "Between Shores",
+      "description": "Ferry crossing open water beside an empty wooden pier",
+      "location": "Puget Sound, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 31
+        }
+      ]
+    },
+    {
+      "id": "tl-32",
+      "source": "puget-sound/BK7A1138.jpg",
+      "title": "Mount Baker Rising",
+      "description": "Snow-covered Mount Baker rising above clouds and Puget Sound",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 32
+        }
+      ]
+    },
+    {
+      "id": "tl-33",
+      "source": "puget-sound/BK7A1142-Edit.jpg",
+      "title": "Light Station, 1905",
+      "description": "Historic white lighthouse beneath deep blue storm clouds",
+      "location": "Mukilteo, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 33
+        }
+      ]
+    },
+    {
+      "id": "tl-34",
+      "source": "puget-sound/BK7A1177.jpg",
+      "title": "Beacon by the Sound",
+      "description": "Historic lighthouse standing beside Puget Sound under broken clouds",
+      "location": "Mukilteo, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 34
+        }
+      ]
+    },
+    {
+      "id": "tl-35",
+      "source": "puget-sound/BK7A1180.jpg",
+      "title": "Storm Behind the Light",
+      "description": "White lighthouse and keepers quarters beneath a gathering storm",
+      "location": "Mukilteo, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 35
+        }
+      ]
+    },
+    {
+      "id": "tl-36",
+      "source": "puget-sound/BK7A1188.jpg",
+      "title": "Keeper of the Coast",
+      "description": "Historic lighthouse complex under dramatic blue clouds",
+      "location": "Mukilteo, Washington",
+      "galleries": [
+        {
+          "slug": "travel-landscape",
+          "order": 36
+        }
+      ]
+    },
+    {
+      "id": "as-01",
+      "source": "placeholders/concrete-lines.jpg",
+      "title": "Concrete Study No. 1",
+      "description": "Placeholder photograph of modern concrete architecture",
+      "location": "Seattle, Washington",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "architecture-spaces",
+          "order": 1
+        }
+      ],
+      "featuredOrder": 5
+    },
+    {
+      "id": "as-02",
+      "source": "placeholders/quiet-interior.jpg",
+      "title": "Quiet Interior",
+      "description": "Placeholder photograph of a minimal sunlit interior",
+      "location": "Pacific Northwest",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "architecture-spaces",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "as-03",
+      "source": "placeholders/city-grid.jpg",
+      "title": "City Grid",
+      "description": "Placeholder photograph of an urban building facade",
+      "location": "Seattle, Washington",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "architecture-spaces",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "fa-01",
+      "source": "placeholders/blue-hour.jpg",
+      "title": "After Blue Hour",
+      "description": "Placeholder abstract photograph in deep blue tones",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "fine-art",
+          "order": 1
+        }
+      ],
+      "featuredOrder": 6
+    },
+    {
+      "id": "fa-02",
+      "source": "placeholders/shadow-form.jpg",
+      "title": "Shadow / Form",
+      "description": "Placeholder minimalist photograph of light and shadow",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "fine-art",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": "fa-03",
+      "source": "placeholders/still-water.jpg",
+      "title": "Still Water",
+      "description": "Placeholder abstract photograph of water reflections",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "fine-art",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "pm-01",
+      "source": "portrait/mePhoto.jpg",
+      "title": "Photographer Portrait",
+      "description": "Portrait of the photographer behind JJM Photography",
+      "location": "Washington State",
+      "portrait": true,
+      "galleries": [
+        {
+          "slug": "people-moments",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "pm-02",
+      "source": "placeholders/passing-moment.jpg",
+      "title": "Passing Moment",
+      "description": "Placeholder documentary street photograph",
+      "location": "Seattle, Washington",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "people-moments",
+          "order": 2
+        }
+      ],
+      "featuredOrder": 7
+    },
+    {
+      "id": "pm-03",
+      "source": "placeholders/gathering.jpg",
+      "title": "Gathering",
+      "description": "Placeholder lifestyle photograph of people gathering",
+      "caption": "Placeholder image — replace with original JJM Photography.",
+      "galleries": [
+        {
+          "slug": "people-moments",
+          "order": 3
+        }
+      ]
+    }
+  ]
+}
