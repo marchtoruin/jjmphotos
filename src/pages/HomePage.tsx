@@ -20,7 +20,7 @@ export function HomePage() {
     <>
       <Seo
         title="JJM Photography — Pacific Northwest Photographer"
-        description="Cinematic landscape, architecture, fine-art, and documentary photography from the Pacific Northwest."
+        description="Cinematic landscape, atmospheric street, architecture, fine-art, and documentary photography from the Pacific Northwest."
       />
 
       <section className="relative min-h-svh overflow-hidden">

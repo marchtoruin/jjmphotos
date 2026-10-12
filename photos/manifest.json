@@ -157,7 +157,6 @@
           "order": 12
         }
       ],
-      "featuredOrder": 2,
       "hero": true
     },
     {
@@ -328,8 +327,7 @@
           "slug": "travel-landscape",
           "order": 25
         }
-      ],
-      "featuredOrder": 4
+      ]
     },
     {
       "id": "tl-26",
@@ -471,6 +469,388 @@
         {
           "slug": "travel-landscape",
           "order": 36
+        }
+      ]
+    },
+    {
+      "id": "at-01",
+      "source": "Atmosphere/IMG_8888.jpg",
+      "title": "Neon Weather",
+      "description": "Apartment windows glowing in vivid colors beneath a heavy evening sky",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 1
+        }
+      ],
+      "featuredOrder": 2
+    },
+    {
+      "id": "at-02",
+      "source": "Atmosphere/IMG_4023.jpg",
+      "title": "Under Post Alley",
+      "description": "Two people walking beneath the illuminated Post Alley sign",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 2
+        }
+      ],
+      "featuredOrder": 4
+    },
+    {
+      "id": "at-03",
+      "source": "Atmosphere/IMG_3842.jpg",
+      "title": "Blue Apertures",
+      "description": "Narrow blue windows punctuating a dark geometric wall",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": "at-04",
+      "source": "Atmosphere/IMG_3639.jpg",
+      "title": "Through the Tunnel",
+      "description": "Cars following a curve through an orange-lit tunnel",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "at-05",
+      "source": "Atmosphere/IMG_8058-Edit.jpg",
+      "title": "Intervals of Light",
+      "description": "Repeating concrete openings cut by warm sunlight and long shadows",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "at-06",
+      "source": "Atmosphere/IMG_9325-Edit.jpg",
+      "title": "Orbs Over the Alley",
+      "description": "Glass globes suspended between shadowed city buildings",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": "at-07",
+      "source": "Atmosphere/IMG_9905-Edit.jpg",
+      "title": "Blue Hour Grid",
+      "description": "Strings of warm lights crossing a blue-hour city canyon",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 7
+        }
+      ]
+    },
+    {
+      "id": "at-08",
+      "source": "Atmosphere/photo3.jpg",
+      "title": "Edge of the Lot",
+      "description": "A vacant snowy lot illuminated by industrial wall lights at night",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 8
+        }
+      ]
+    },
+    {
+      "id": "at-09",
+      "source": "Atmosphere/IMG_2527.jpg",
+      "title": "Artificial Constellation",
+      "description": "Electric blue light and drifting particles surrounding a circular fixture",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 9
+        }
+      ]
+    },
+    {
+      "id": "at-10",
+      "source": "Atmosphere/IMG_8945.jpg",
+      "title": "Concrete Shadows",
+      "description": "Long architectural shadows stretching beneath concrete columns",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 10
+        }
+      ]
+    },
+    {
+      "id": "at-11",
+      "source": "Atmosphere/IMG_9814-Edit.jpg",
+      "title": "Pressure Lines",
+      "description": "Rows of weathered metal fins converging into deep shadow",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 11
+        }
+      ]
+    },
+    {
+      "id": "at-12",
+      "source": "Atmosphere/IMG_3863.jpg",
+      "title": "Signal Red",
+      "description": "A red side mirror reflecting the geometry of a nearby building",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 12
+        }
+      ]
+    },
+    {
+      "id": "at-13",
+      "source": "Atmosphere/IMG_3960.jpg",
+      "title": "Three Lamps",
+      "description": "Warm wall lamps breaking the cool geometry of an industrial facade",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 13
+        }
+      ]
+    },
+    {
+      "id": "at-14",
+      "source": "Atmosphere/IMG_3852.jpg",
+      "title": "Exit Light",
+      "description": "A solitary wall fixture held between hard sunlight and blue shadow",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 14
+        }
+      ]
+    },
+    {
+      "id": "at-15",
+      "source": "Atmosphere/IMG_9707-Edit.jpg",
+      "title": "After Hours",
+      "description": "Office windows and terraces repeating across a downtown facade",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 15
+        }
+      ]
+    },
+    {
+      "id": "at-16",
+      "source": "Atmosphere/IMG_9749.jpg",
+      "title": "City Blocks",
+      "description": "Layered towers catching muted color beneath an overcast sky",
+      "location": "Seattle, Washington",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 16
+        }
+      ]
+    },
+    {
+      "id": "at-17",
+      "source": "Atmosphere/IMG_9485.jpg",
+      "title": "Shoulder Stop",
+      "description": "A roadside encounter seen through rain-softened glass",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 17
+        }
+      ]
+    },
+    {
+      "id": "at-18",
+      "source": "Atmosphere/IMG_9587.jpg",
+      "title": "Covered Machine",
+      "description": "A motorcycle wrapped in weather covers after the rain",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 18
+        }
+      ]
+    },
+    {
+      "id": "at-19",
+      "source": "Atmosphere/fog6.jpg",
+      "title": "Platforms in Fog",
+      "description": "Rail lines and station platforms disappearing into dense morning fog",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 19
+        }
+      ]
+    },
+    {
+      "id": "at-20",
+      "source": "Atmosphere/cracks.jpg",
+      "title": "Service Corridor",
+      "description": "A stark underground corridor leading toward a pair of closed doors",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 20
+        }
+      ]
+    },
+    {
+      "id": "at-21",
+      "source": "Atmosphere/IMG_0031.jpg",
+      "title": "Rain Through Glass",
+      "description": "Street lights and passing storefronts dissolving through a rain-streaked window",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 21
+        }
+      ]
+    },
+    {
+      "id": "at-22",
+      "source": "Atmosphere/IMG_1277_2.jpg",
+      "title": "Underpass Rhythm",
+      "description": "Repeating columns and amber lights receding through a city underpass",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 22
+        }
+      ]
+    },
+    {
+      "id": "at-23",
+      "source": "Atmosphere/IMG_1319-2.jpg",
+      "title": "Antiques at Midnight",
+      "description": "A solitary antiques sign glowing across a dark roadside",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 23
+        }
+      ]
+    },
+    {
+      "id": "at-24",
+      "source": "Atmosphere/IMG_1513.jpg",
+      "title": "Moon Study",
+      "description": "A full moon emerging between layers of dark cloud",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 24
+        }
+      ]
+    },
+    {
+      "id": "at-25",
+      "source": "Atmosphere/IMG_2390.jpg",
+      "title": "Open All Night",
+      "description": "A brightly lit gas station isolated against the night",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 25
+        }
+      ]
+    },
+    {
+      "id": "at-26",
+      "source": "Atmosphere/IMG_2468-2.jpg",
+      "title": "Loading Dock Light",
+      "description": "A single security lamp illuminating a service door after dark",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 26
+        }
+      ]
+    },
+    {
+      "id": "at-27",
+      "source": "Atmosphere/IMG_3416.jpg",
+      "title": "Weather Above the Roof",
+      "description": "Electric blue storm clouds gathering over a silhouetted rooftop",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 27
+        }
+      ]
+    },
+    {
+      "id": "at-28",
+      "source": "Atmosphere/IMG_3973.jpg",
+      "title": "Rain Pattern",
+      "description": "Water droplets scattering reflected light across a dark pane of glass",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 28
+        }
+      ]
+    },
+    {
+      "id": "at-29",
+      "source": "Atmosphere/IMG_8838.jpg",
+      "title": "Last Train Home",
+      "description": "Passengers gathered shoulder to shoulder inside a crowded rail car",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 29
+        }
+      ]
+    },
+    {
+      "id": "at-30",
+      "source": "Atmosphere/IMG_9341-Edit.jpg",
+      "title": "Hard Light, Empty Street",
+      "description": "Deep architectural shadows cutting across an otherwise empty city sidewalk",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 30
+        }
+      ]
+    },
+    {
+      "id": "at-31",
+      "source": "Atmosphere/IMG_9484.jpg",
+      "title": "Train at Dusk",
+      "description": "A commuter train moving through a blue-gray evening",
+      "location": "Washington State",
+      "galleries": [
+        {
+          "slug": "atmosphere",
+          "order": 31
         }
       ]
     },

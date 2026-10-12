@@ -2,6 +2,7 @@ import { generatedPhotos } from './photos.generated'
 
 export type CategorySlug =
   | 'travel-landscape'
+  | 'atmosphere'
   | 'architecture-spaces'
   | 'fine-art'
   | 'people-moments'
@@ -65,6 +66,13 @@ export const categories: GalleryCategory[] = [
     eyebrow: 'Land, weather, distance',
     description:
       'Destinations, coastlines, and quiet encounters with the natural world—photographed with an eye for atmosphere and a sense of place.',
+  },
+  {
+    slug: 'atmosphere',
+    name: 'Atmosphere & After Dark',
+    eyebrow: 'Color, shadow, chance',
+    description:
+      'Moody street observations, liminal spaces, glowing architecture, and cinematic fragments gathered from the everyday.',
   },
   {
     slug: 'architecture-spaces',

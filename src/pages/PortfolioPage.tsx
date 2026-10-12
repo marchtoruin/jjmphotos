@@ -9,7 +9,7 @@ export function PortfolioPage() {
     <>
       <Seo
         title="Portfolio — JJM Photography"
-        description="Explore travel, landscape, architecture, fine-art, and documentary photography by JJM Photography."
+        description="Explore landscape, atmospheric street, architecture, fine-art, and documentary photography by JJM Photography."
       />
       <header className="page-shell pb-18 pt-40 md:pb-28 md:pt-52">
         <Reveal>
@@ -18,7 +18,7 @@ export function PortfolioPage() {
             Portfolio
           </h1>
           <p className="ml-auto mt-12 max-w-xl text-lg leading-8 text-mist">
-            Four evolving collections exploring the natural world, built space, personal studies, and the human moments found between.
+            Five evolving collections exploring the natural world, city atmosphere, built space, personal studies, and the human moments found between.
           </p>
         </Reveal>
       </header>
