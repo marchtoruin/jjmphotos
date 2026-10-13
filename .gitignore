@@ -15,40 +15,6 @@ public/images/generated/
 src/data/photos.generated.ts
 .image-previews/
 
-# Keep the full Atmosphere archive local; deploy only the curated site edit.
-photos/originals/Atmosphere/*
-!photos/originals/Atmosphere/IMG_8888.jpg
-!photos/originals/Atmosphere/IMG_4023.jpg
-!photos/originals/Atmosphere/IMG_3842.jpg
-!photos/originals/Atmosphere/IMG_3639.jpg
-!photos/originals/Atmosphere/IMG_8058-Edit.jpg
-!photos/originals/Atmosphere/IMG_9325-Edit.jpg
-!photos/originals/Atmosphere/IMG_9905-Edit.jpg
-!photos/originals/Atmosphere/photo3.jpg
-!photos/originals/Atmosphere/IMG_2527.jpg
-!photos/originals/Atmosphere/IMG_8945.jpg
-!photos/originals/Atmosphere/IMG_9814-Edit.jpg
-!photos/originals/Atmosphere/IMG_3863.jpg
-!photos/originals/Atmosphere/IMG_3960.jpg
-!photos/originals/Atmosphere/IMG_3852.jpg
-!photos/originals/Atmosphere/IMG_9707-Edit.jpg
-!photos/originals/Atmosphere/IMG_9749.jpg
-!photos/originals/Atmosphere/IMG_9485.jpg
-!photos/originals/Atmosphere/IMG_9587.jpg
-!photos/originals/Atmosphere/fog6.jpg
-!photos/originals/Atmosphere/cracks.jpg
-!photos/originals/Atmosphere/IMG_0031.jpg
-!photos/originals/Atmosphere/IMG_1277_2.jpg
-!photos/originals/Atmosphere/IMG_1319-2.jpg
-!photos/originals/Atmosphere/IMG_1513.jpg
-!photos/originals/Atmosphere/IMG_2390.jpg
-!photos/originals/Atmosphere/IMG_2468-2.jpg
-!photos/originals/Atmosphere/IMG_3416.jpg
-!photos/originals/Atmosphere/IMG_3973.jpg
-!photos/originals/Atmosphere/IMG_8838.jpg
-!photos/originals/Atmosphere/IMG_9341-Edit.jpg
-!photos/originals/Atmosphere/IMG_9484.jpg
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

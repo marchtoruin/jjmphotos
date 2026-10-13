@@ -90,11 +90,11 @@ export function HomePage() {
               <p className="eyebrow">Selected photographs</p>
               <h2 className="mt-4 font-serif text-4xl md:text-6xl">Recent frames</h2>
             </div>
-            <span className="hidden text-[0.8rem] text-mist sm:block">A curated edit · 01—04</span>
+            <span className="hidden text-[0.8rem] text-mist sm:block">A curated edit · 01—05</span>
           </div>
         </Reveal>
         <div className="grid gap-5 md:grid-cols-12 md:gap-y-20">
-          {featuredPhotographs.slice(0, 4).map((photo, index) => (
+          {featuredPhotographs.slice(0, 5).map((photo, index) => (
             <Reveal
               key={photo.id}
               className={
@@ -104,7 +104,9 @@ export function HomePage() {
                     ? 'md:col-span-4 md:col-start-9 md:mt-32'
                     : index === 2
                       ? 'md:col-span-4 md:col-start-2'
-                      : 'md:col-span-6 md:col-start-7 md:mt-20'
+                      : index === 3
+                        ? 'md:col-span-6 md:col-start-7 md:mt-20'
+                        : 'md:col-span-8 md:col-start-3 md:mt-12'
               }
             >
               <Link to={`/portfolio/${photo.category}`} className="group block">

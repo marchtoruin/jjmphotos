@@ -1,50 +1,91 @@
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { ArrowLeft, ArrowRight, X } from 'lucide-react'
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Photograph } from '../data/photography'
 
 interface LightboxProps {
   photos: Photograph[]
   activeIndex: number | null
+  sharedPhotoId: string | null
+  previewSrc: string | null
   onClose: () => void
   onChange: (index: number) => void
+  onExited: () => void
 }
 
-export function Lightbox({ photos, activeIndex, onClose, onChange }: LightboxProps) {
+export function Lightbox({
+  photos,
+  activeIndex,
+  sharedPhotoId,
+  previewSrc,
+  onClose,
+  onChange,
+  onExited,
+}: LightboxProps) {
+  const dialog = useRef<HTMLDivElement>(null)
   const closeButton = useRef<HTMLButtonElement>(null)
   const reduceMotion = useReducedMotion()
+  const [fullImageLoaded, setFullImageLoaded] = useState<string | null>(null)
   const photo = activeIndex === null ? null : photos[activeIndex]
+  const isOpen = photo !== null
 
-  const previous = () => {
+  const previous = useCallback(() => {
     if (activeIndex !== null) onChange((activeIndex - 1 + photos.length) % photos.length)
-  }
+  }, [activeIndex, onChange, photos.length])
 
-  const next = () => {
+  const next = useCallback(() => {
     if (activeIndex !== null) onChange((activeIndex + 1) % photos.length)
-  }
+  }, [activeIndex, onChange, photos.length])
 
   useEffect(() => {
-    if (!photo) return
+    if (!isOpen) return
     const previousOverflow = document.body.style.overflow
+    const previousRootOverflow = document.documentElement.style.overflow
     document.body.style.overflow = 'hidden'
+    document.documentElement.style.overflow = 'hidden'
     closeButton.current?.focus()
 
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.documentElement.style.overflow = previousRootOverflow
+    }
+  }, [isOpen])
+
+  useEffect(() => {
+    if (!isOpen) return
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose()
       if (event.key === 'ArrowLeft') previous()
       if (event.key === 'ArrowRight') next()
+      if (event.key === 'Tab') {
+        const controls = dialog.current?.querySelectorAll<HTMLButtonElement>('button:not(:disabled)')
+        if (!controls?.length) return
+        const first = controls[0]
+        const last = controls[controls.length - 1]
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault()
+          last.focus()
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault()
+          first.focus()
+        }
+      }
     }
     window.addEventListener('keydown', onKeyDown)
     return () => {
-      document.body.style.overflow = previousOverflow
       window.removeEventListener('keydown', onKeyDown)
     }
-  })
+  }, [isOpen, next, onClose, previous])
+
+  useEffect(() => {
+    setFullImageLoaded(null)
+  }, [photo?.id])
 
   return (
-    <AnimatePresence>
+    <AnimatePresence onExitComplete={onExited}>
       {photo && (
         <motion.div
+          ref={dialog}
           className="fixed inset-0 z-50 flex flex-col bg-[#090a09]/98"
           role="dialog"
           aria-modal="true"
@@ -79,22 +120,51 @@ export function Lightbox({ photos, activeIndex, onClose, onChange }: LightboxPro
               if (info.offset.x < -70) next()
             }}
           >
-            <AnimatePresence mode="wait">
-              <motion.img
+            <AnimatePresence initial={false} mode="wait">
+              <motion.div
                 key={photo.id}
-                src={photo.src}
-                srcSet={photo.srcSet}
-                sizes="100vw"
-                alt={photo.alt}
-                width={photo.width}
-                height={photo.height}
-                className="max-h-full max-w-full select-none object-contain"
-                initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
-                animate={{ opacity: 1, scale: 1 }}
+                layoutId={sharedPhotoId === photo.id ? `photo-${photo.id}` : undefined}
+                className="relative max-h-full max-w-full overflow-hidden bg-[#111210]"
+                style={{
+                  aspectRatio: photo.aspectRatio,
+                  width: `min(100%, calc((100vh - 10.5rem) * ${photo.width / photo.height}))`,
+                }}
+                initial={reduceMotion || sharedPhotoId === photo.id ? false : { opacity: 0 }}
+                animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: reduceMotion ? 0 : 0.35 }}
-                draggable={false}
-              />
+                transition={
+                  reduceMotion
+                    ? { duration: 0 }
+                    : {
+                        layout: { type: 'spring', stiffness: 340, damping: 34 },
+                        opacity: { duration: 0.22 },
+                      }
+                }
+              >
+                <img
+                  src={previewSrc || photo.thumbnailSrc}
+                  alt=""
+                  width={photo.width}
+                  height={photo.height}
+                  className="absolute inset-0 h-full w-full select-none object-contain"
+                  draggable={false}
+                />
+                <img
+                  src={photo.src}
+                  srcSet={photo.srcSet}
+                  sizes="100vw"
+                  alt={photo.alt}
+                  width={photo.width}
+                  height={photo.height}
+                  onLoad={() => setFullImageLoaded(photo.id)}
+                  className="absolute inset-0 h-full w-full select-none object-contain transition-opacity duration-300"
+                  style={{
+                    opacity: fullImageLoaded === photo.id ? 1 : 0,
+                    transitionDuration: reduceMotion ? '0ms' : undefined,
+                  }}
+                  draggable={false}
+                />
+              </motion.div>
             </AnimatePresence>
 
             <button
