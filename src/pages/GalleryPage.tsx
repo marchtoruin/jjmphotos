@@ -13,6 +13,8 @@ export function GalleryPage() {
 
   const photos = getPhotosByCategory(category.slug)
 
+  if (photos.length === 0) return <Navigate to="/portfolio" replace />
+
   return (
     <>
       <Seo

@@ -190,11 +190,6 @@ export function Lightbox({
               <h2 className="text-base text-stone">{photo.title}</h2>
               {photo.location && <p className="mt-1 text-sm text-mist">{photo.location}</p>}
             </div>
-            {photo.caption?.startsWith('Placeholder') && (
-              <p className="max-w-sm text-right text-[0.7rem] uppercase tracking-[0.16em] text-mist">
-                Demonstration image
-              </p>
-            )}
           </div>
         </motion.div>
       )}

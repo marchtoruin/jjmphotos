@@ -8,17 +8,17 @@ export function ContactPage() {
     <>
       <Seo
         title="Contact — JJM Photography"
-        description="Contact JJM Photography for commissions, collaborations, licensing, and print inquiries."
+        description="Get in touch with Justin about working together, prints, image licensing, or just to say hello."
       />
       <section className="page-shell flex min-h-[calc(100svh-5rem)] items-center pb-20 pt-36">
         <div className="grid w-full gap-16 md:grid-cols-12 md:items-end">
           <Reveal className="md:col-span-8">
-            <p className="eyebrow">Inquiries & collaborations</p>
+            <p className="eyebrow">Contact</p>
             <h1 className="mt-7 font-serif text-[clamp(4.5rem,11vw,11rem)] leading-[0.78] tracking-[-0.045em]">
-              Let’s talk.
+              Say hello.
             </h1>
             <p className="mt-12 max-w-2xl text-lg leading-8 text-mist">
-              For commissions, destination work, architecture and hospitality projects, licensing, prints, or a thoughtful collaboration—send a note with a little about what you have in mind.
+              Interested in working together, asking about a photograph, or just saying hello? Get in touch. I’m open to select commissions, collaborations, and inquiries about prints or image licensing.
             </p>
           </Reveal>
 
@@ -54,9 +54,7 @@ export function ContactPage() {
               </a>
             </div>
             <p className="mt-6 text-sm leading-6 text-mist">
-              Pacific Northwest / Washington State
-              <br />
-              Available for select work worldwide.
+              Based in Washington State
             </p>
           </Reveal>
         </div>

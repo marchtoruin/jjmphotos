@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { Seo } from '../components/Seo'
 import {
-  categories,
+  activeCategories,
   featuredPhotographs,
   getPhotosByCategory,
   heroPhotograph,
@@ -121,9 +121,6 @@ export function HomePage() {
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
                   />
-                  {photo.caption?.startsWith('Placeholder') && (
-                    <span className="placeholder-chip">Placeholder</span>
-                  )}
                 </div>
                 <div className="mt-3 flex flex-col gap-1 text-[0.9375rem] sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
                   <span>{photo.title}</span>
@@ -141,7 +138,7 @@ export function HomePage() {
             <p className="eyebrow mb-12">Explore by collection</p>
           </Reveal>
           <div>
-            {categories.map((category, index) => {
+            {activeCategories.map((category, index) => {
               const cover = getPhotosByCategory(category.slug)[0]
               return (
                 <Reveal key={category.slug}>
@@ -174,13 +171,13 @@ export function HomePage() {
 
       <section className="section-space page-shell">
         <Reveal className="grid gap-10 md:grid-cols-12 md:items-end">
-          <p className="eyebrow md:col-span-3">Commissioned work</p>
+          <p className="eyebrow md:col-span-3">Get in touch</p>
           <div className="md:col-span-8 md:col-start-5">
             <h2 className="font-serif text-[clamp(2.8rem,6vw,6.5rem)] leading-[0.95]">
-              Have a place or story worth seeing differently?
+              See something you like, or have an idea in mind?
             </h2>
             <Link to="/contact" className="arrow-link mt-10">
-              Start a conversation <ArrowUpRight size={16} />
+              Say hello <ArrowUpRight size={16} />
             </Link>
           </div>
         </Reveal>

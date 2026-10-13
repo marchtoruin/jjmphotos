@@ -145,6 +145,10 @@ export const getPhotosByCategory = (category: CategorySlug) =>
     })
     .sort((a, b) => a.order - b.order)
 
+export const activeCategories = categories.filter(
+  (category) => getPhotosByCategory(category.slug).length > 0,
+)
+
 export const featuredPhotographs = generated
   .filter((photo) => photo.featuredOrder !== undefined)
   .sort((a, b) => (a.featuredOrder ?? Infinity) - (b.featuredOrder ?? Infinity))

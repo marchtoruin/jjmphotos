@@ -7,16 +7,14 @@ export const siteContent = {
       'Independent photography shaped by atmosphere, honest observation, and the changing light of the Pacific Northwest.',
   },
   about: {
-    heading: 'Paying attention to what a place holds.',
+    heading: 'Hi, I’m Justin.',
     biography: [
-      'I’m an independent photographer based in Washington State, working across landscape, architecture, travel, and documentary storytelling.',
-      'My practice is grounded in patient observation. I’m drawn to the point where a place becomes a feeling—the weather rolling in, a room shaped by afternoon light, or a gesture that lasts only a second.',
+      'I’m a photographer based in Washington State. I photograph landscapes, urban scenes, and the occasional personal study—mostly whatever catches my eye when the light starts to change.',
+      'I’m drawn to atmosphere and quiet moments, and to the way an ordinary street or stretch of road can look like a still from a film for a second or two. I’m open to select commissions, collaborations, and inquiries about prints or image licensing.',
     ],
-    philosophy:
-      'Whether the work is personal or commissioned, I approach it with the same aim: to make images that feel considered, atmospheric, and true to the experience of being there.',
   },
   contact: {
-    email: 'hello@jjmphotos.com',
+    email: 'justin.j.mcclure@hotmail.com',
     instagramUrl: 'https://instagram.com/grain_and_void',
     instagramHandle: '@grain_and_void',
   },

@@ -89,9 +89,6 @@ export function PortfolioGrid({ photos }: PortfolioGridProps) {
                   decoding="async"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
                 />
-                {photo.caption?.startsWith('Placeholder') && (
-                  <span className="placeholder-chip">Placeholder</span>
-                )}
                 <span className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/10" />
               </motion.div>
               <span className="mt-3 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">

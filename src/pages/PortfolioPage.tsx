@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { Seo } from '../components/Seo'
-import { categories, getPhotosByCategory } from '../data/photography'
+import { activeCategories, getPhotosByCategory } from '../data/photography'
 
 export function PortfolioPage() {
   return (
@@ -18,13 +18,13 @@ export function PortfolioPage() {
             Portfolio
           </h1>
           <p className="ml-auto mt-12 max-w-xl text-lg leading-8 text-mist">
-            Five evolving collections exploring the natural world, city atmosphere, built space, personal studies, and the human moments found between.
+            Evolving collections exploring the natural world, city atmosphere, and the human moments found between.
           </p>
         </Reveal>
       </header>
 
       <div className="page-shell pb-28 md:pb-40">
-        {categories.map((category, index) => {
+        {activeCategories.map((category, index) => {
           const cover = getPhotosByCategory(category.slug)[0]
           return (
             <Reveal key={category.slug} className="border-t border-white/12 py-10 md:py-16">

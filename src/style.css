@@ -121,22 +121,6 @@ a:focus-visible {
   border-color: #ecebe5;
 }
 
-.placeholder-chip {
-  position: absolute;
-  top: 0.7rem;
-  right: 0.7rem;
-  z-index: 2;
-  border: 1px solid rgb(255 255 255 / 24%);
-  background: rgb(10 10 10 / 62%);
-  padding: 0.35rem 0.5rem;
-  color: rgb(255 255 255 / 72%);
-  font-size: 0.58rem;
-  letter-spacing: 0.14em;
-  line-height: 1;
-  text-transform: uppercase;
-  backdrop-filter: blur(6px);
-}
-
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr;

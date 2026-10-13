@@ -40,10 +40,10 @@ Gallery names, routes, and descriptions are centralized in the `categories` arra
 
 Primary editable copy, the email placeholder, and Instagram details live in `src/data/site.ts`.
 
-- The email address currently uses `hello@jjmphotos.com`; confirm or replace it before launch.
+- The contact email is `justin.j.mcclure@hotmail.com`.
 - Longer page-specific headlines live in `src/pages/`.
 - Site-wide SEO defaults live in `index.html`; page titles and descriptions use the `Seo` component.
-- The portrait placeholder is configured in `src/pages/AboutPage.tsx`.
+- The About portrait is the manifest photo marked `portrait: true`.
 
 The contact page intentionally uses direct email and Instagram links. It does not include a form that claims to submit without a backend.
 
@@ -61,6 +61,4 @@ The included `netlify.toml` configures:
 
 Push changes to the repository’s `main` branch. With the GitHub repository connected to Netlify, the site will build and deploy automatically.
 
-## Placeholder image credits
-
-The initial demonstration images are downloaded from Unsplash and are **not** represented as JJM Photography work. They are labeled throughout the site and should be replaced before launch.
+Collections with no photographs are hidden automatically from the home and portfolio pages.

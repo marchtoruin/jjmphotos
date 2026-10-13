@@ -1258,7 +1258,7 @@
     {
       "id": "at-066",
       "source": "Atmosphere/IMG_3667.jpg",
-      "title": "Air Vent",
+      "title": "Sentient",
       "description": "A geometric metal vent rising against open sky",
       "galleries": [
         {
@@ -1294,7 +1294,7 @@
     {
       "id": "at-069",
       "source": "Atmosphere/IMG_3680.jpg",
-      "title": "Green Booth",
+      "title": "Green Exit",
       "description": "A bright green public booth standing alone beside the road",
       "galleries": [
         {
@@ -1737,89 +1737,6 @@
       ]
     },
     {
-      "id": "as-01",
-      "source": "placeholders/concrete-lines.jpg",
-      "title": "Concrete Study No. 1",
-      "description": "Placeholder photograph of modern concrete architecture",
-      "location": "Seattle, Washington",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "architecture-spaces",
-          "order": 1
-        }
-      ],
-      "featuredOrder": 5
-    },
-    {
-      "id": "as-02",
-      "source": "placeholders/quiet-interior.jpg",
-      "title": "Quiet Interior",
-      "description": "Placeholder photograph of a minimal sunlit interior",
-      "location": "Pacific Northwest",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "architecture-spaces",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "id": "as-03",
-      "source": "placeholders/city-grid.jpg",
-      "title": "City Grid",
-      "description": "Placeholder photograph of an urban building facade",
-      "location": "Seattle, Washington",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "architecture-spaces",
-          "order": 3
-        }
-      ]
-    },
-    {
-      "id": "fa-01",
-      "source": "placeholders/blue-hour.jpg",
-      "title": "After Blue Hour",
-      "description": "Placeholder abstract photograph in deep blue tones",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "fine-art",
-          "order": 1
-        }
-      ],
-      "featuredOrder": 6
-    },
-    {
-      "id": "fa-02",
-      "source": "placeholders/shadow-form.jpg",
-      "title": "Shadow / Form",
-      "description": "Placeholder minimalist photograph of light and shadow",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "fine-art",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "id": "fa-03",
-      "source": "placeholders/still-water.jpg",
-      "title": "Still Water",
-      "description": "Placeholder abstract photograph of water reflections",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "fine-art",
-          "order": 3
-        }
-      ]
-    },
-    {
       "id": "pm-01",
       "source": "portrait/mePhoto.jpg",
       "title": "Photographer Portrait",
@@ -1830,34 +1747,6 @@
         {
           "slug": "people-moments",
           "order": 1
-        }
-      ]
-    },
-    {
-      "id": "pm-02",
-      "source": "placeholders/passing-moment.jpg",
-      "title": "Passing Moment",
-      "description": "Placeholder documentary street photograph",
-      "location": "Seattle, Washington",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "people-moments",
-          "order": 2
-        }
-      ],
-      "featuredOrder": 7
-    },
-    {
-      "id": "pm-03",
-      "source": "placeholders/gathering.jpg",
-      "title": "Gathering",
-      "description": "Placeholder lifestyle photograph of people gathering",
-      "caption": "Placeholder image — replace with original JJM Photography.",
-      "galleries": [
-        {
-          "slug": "people-moments",
-          "order": 3
         }
       ]
     }
