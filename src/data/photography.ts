@@ -2,6 +2,7 @@ import { generatedPhotos } from './photos.generated'
 
 export type CategorySlug =
   | 'travel-landscape'
+  | 'japan'
   | 'atmosphere'
   | 'architecture-spaces'
   | 'fine-art'
@@ -66,6 +67,13 @@ export const categories: GalleryCategory[] = [
     eyebrow: 'Land, weather, distance',
     description:
       'Destinations, coastlines, and quiet encounters with the natural world—photographed with an eye for atmosphere and a sense of place.',
+  },
+  {
+    slug: 'japan',
+    name: 'Japan',
+    eyebrow: 'Rain, neon, temples',
+    description:
+      'Wet streets, quiet temples, and late nights from a trip through Tokyo, Kyoto, and Atami.',
   },
   {
     slug: 'atmosphere',

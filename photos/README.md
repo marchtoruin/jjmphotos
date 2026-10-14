@@ -39,6 +39,7 @@ Change `order` to change a photograph’s position. Lower numbers appear first.
 Available gallery slugs:
 
 - `travel-landscape`
+- `japan`
 - `atmosphere`
 - `architecture-spaces`
 - `fine-art`

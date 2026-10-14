@@ -11,6 +11,7 @@ const generatedDataPath = path.join(root, 'src/data/photos.generated.ts')
 const targetWidths = [480, 768, 1200, 1800, 2400]
 const gallerySlugs = new Set([
   'travel-landscape',
+  'japan',
   'atmosphere',
   'architecture-spaces',
   'fine-art',

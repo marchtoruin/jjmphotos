@@ -1744,8 +1744,8 @@
       "location": "Tokyo, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 37
+          "slug": "japan",
+          "order": 2
         }
       ]
     },
@@ -1757,8 +1757,8 @@
       "location": "Tokyo, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 38
+          "slug": "japan",
+          "order": 3
         }
       ]
     },
@@ -1770,8 +1770,8 @@
       "location": "Akihabara, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 39
+          "slug": "japan",
+          "order": 4
         }
       ]
     },
@@ -1783,8 +1783,8 @@
       "location": "Tokyo, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 40
+          "slug": "japan",
+          "order": 5
         }
       ]
     },
@@ -1796,8 +1796,8 @@
       "location": "Akihabara, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 41
+          "slug": "japan",
+          "order": 1
         },
         {
           "slug": "atmosphere",
@@ -1813,8 +1813,8 @@
       "location": "Asakusa, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 42
+          "slug": "japan",
+          "order": 6
         }
       ]
     },
@@ -1826,8 +1826,8 @@
       "location": "Asakusa, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 43
+          "slug": "japan",
+          "order": 7
         }
       ]
     },
@@ -1839,8 +1839,8 @@
       "location": "Asakusa, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 44
+          "slug": "japan",
+          "order": 8
         }
       ]
     },
@@ -1852,8 +1852,8 @@
       "location": "Asakusa, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 45
+          "slug": "japan",
+          "order": 9
         }
       ]
     },
@@ -1865,8 +1865,8 @@
       "location": "Tokyo Station, Tokyo",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 46
+          "slug": "japan",
+          "order": 10
         }
       ]
     },
@@ -1878,8 +1878,8 @@
       "location": "Kiyomizu-dera, Kyoto",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 47
+          "slug": "japan",
+          "order": 11
         }
       ]
     },
@@ -1891,8 +1891,8 @@
       "location": "Kiyomizu-dera, Kyoto",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 48
+          "slug": "japan",
+          "order": 12
         }
       ]
     },
@@ -1904,8 +1904,8 @@
       "location": "Kiyomizu-dera, Kyoto",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 49
+          "slug": "japan",
+          "order": 13
         }
       ]
     },
@@ -1917,8 +1917,8 @@
       "location": "Kiyomizu-dera, Kyoto",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 50
+          "slug": "japan",
+          "order": 14
         }
       ]
     },
@@ -1930,8 +1930,8 @@
       "location": "Higashiyama, Kyoto",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 51
+          "slug": "japan",
+          "order": 15
         }
       ]
     },
@@ -1943,8 +1943,8 @@
       "location": "Kyoto, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 52
+          "slug": "japan",
+          "order": 16
         }
       ]
     },
@@ -1956,8 +1956,8 @@
       "location": "Kyoto, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 53
+          "slug": "japan",
+          "order": 17
         }
       ]
     },
@@ -1969,8 +1969,8 @@
       "location": "Kyoto, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 54
+          "slug": "japan",
+          "order": 18
         }
       ]
     },
@@ -1982,8 +1982,8 @@
       "location": "Kyoto, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 55
+          "slug": "japan",
+          "order": 19
         }
       ]
     },
@@ -1995,8 +1995,8 @@
       "location": "Nijō Castle, Kyoto",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 56
+          "slug": "japan",
+          "order": 20
         }
       ]
     },
@@ -2008,8 +2008,8 @@
       "location": "Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 57
+          "slug": "japan",
+          "order": 21
         },
         {
           "slug": "atmosphere",
@@ -2025,8 +2025,8 @@
       "location": "Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 58
+          "slug": "japan",
+          "order": 22
         }
       ]
     },
@@ -2038,8 +2038,8 @@
       "location": "Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 59
+          "slug": "japan",
+          "order": 23
         },
         {
           "slug": "atmosphere",
@@ -2055,8 +2055,8 @@
       "location": "Atami, Japan",
       "galleries": [
         {
-          "slug": "travel-landscape",
-          "order": 60
+          "slug": "japan",
+          "order": 24
         },
         {
           "slug": "atmosphere",
