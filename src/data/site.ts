@@ -4,7 +4,7 @@ export const siteContent = {
   home: {
     statement: 'Places. Moments. Everything in between.',
     introduction:
-      'Independent photography shaped by atmosphere, honest observation, and the changing light of the Pacific Northwest.',
+      'Photographs of quiet moments, changing light, and everyday places—close to home in Washington and further afield.',
   },
   about: {
     heading: 'Hi, I’m Justin.',

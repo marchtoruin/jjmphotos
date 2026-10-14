@@ -354,8 +354,7 @@
           "slug": "travel-landscape",
           "order": 27
         }
-      ],
-      "featuredOrder": 5
+      ]
     },
     {
       "id": "tl-28",
@@ -1803,7 +1802,8 @@
           "slug": "atmosphere",
           "order": 106
         }
-      ]
+      ],
+      "featuredOrder": 5
     },
     {
       "id": "jp-06",

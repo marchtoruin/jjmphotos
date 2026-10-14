@@ -68,7 +68,7 @@ export function HomePage() {
 
       <section id="introduction" className="section-space page-shell">
         <Reveal className="grid gap-12 md:grid-cols-12 md:items-end">
-          <p className="eyebrow md:col-span-3">Independent photography</p>
+          <p className="eyebrow md:col-span-3">Photography by Justin</p>
           <div className="md:col-span-8 md:col-start-5">
             <h2 className="font-serif text-[clamp(2.5rem,5.3vw,5.8rem)] leading-[0.98] tracking-[-0.025em]">
               Images rooted in atmosphere, observation, and a sense of place.
