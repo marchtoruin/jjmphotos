@@ -49,7 +49,7 @@ export function PortfolioPage() {
                 </div>
                 <div className="md:col-span-6 md:col-start-7">
                   <span className="plate">0{index + 1} · {category.eyebrow}</span>
-                  <h2 className="mt-3 font-serif text-3xl italic leading-none tracking-[-0.02em] md:text-5xl">
+                  <h2 className="mt-3 font-serif text-3xl leading-none tracking-[-0.02em] md:text-[2.8rem]">
                     {category.name}
                   </h2>
                   <p className="mt-4 max-w-lg text-[0.92rem] leading-7 text-mist">{category.description}</p>

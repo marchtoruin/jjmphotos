@@ -69,10 +69,12 @@ Delete the file from its folder. The next build removes it from the website and 
 
 ## Homepage hero, featured photos, and the About portrait
 
-These special placements live in `photos/metadata.json`. Find the filename and add or change:
+The homepage still is a separate 16:9 crop in `photos/hero/`. It is optimized by the same pipeline and does not replace the gallery original.
+
+The photograph that still belongs to is marked in `photos/metadata.json`:
 
 ```json
-"BK7A0636.jpg": {
+"BK7A1058.jpg": {
   "hero": true
 }
 ```

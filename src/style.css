@@ -33,7 +33,7 @@ body {
   overflow-x: hidden;
   background-color: #141210;
   background-image: url("/grain.svg");
-  background-size: 180px 180px;
+  background-size: 160px 160px;
 }
 
 button,
@@ -68,11 +68,64 @@ a:focus-visible {
 
 .eyebrow {
   color: #9a9286;
-  font-size: 0.68rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.66rem;
   font-weight: 400;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.hero-stage {
+  padding: 4.25rem 0.7rem 0.7rem;
+}
+
+.hero-frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0c0b0a;
+  box-shadow: inset 0 0 0 1px rgb(230 223 210 / 12%);
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 28% 50%;
+}
+
+.hero-identity {
+  position: absolute;
+  top: 18%;
+  right: 1.1rem;
+  color: #e6dfd2;
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-shadow: 0 1px 16px rgb(0 0 0 / 70%);
+}
+
+.hero-index {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 0.9rem;
+  color: #e6dfd2;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 14px rgb(0 0 0 / 70%);
+}
+
+.featured-pair {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
 }
 
 .nav-link {
@@ -204,6 +257,15 @@ a:focus-visible {
     width: min(100% - 3rem, 1440px);
   }
 
+  .featured-pair {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.1rem;
+  }
+
+  .featured-pair-weighted {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  }
+
   .photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem 0.9rem;
@@ -218,6 +280,30 @@ a:focus-visible {
 @media (min-width: 1024px) {
   .page-shell {
     width: min(100% - 4.5rem, 1440px);
+  }
+
+  .hero-stage {
+    padding: 4.5rem 1rem 1rem;
+  }
+
+  .hero-frame {
+    min-height: calc(100svh - 5.5rem);
+    aspect-ratio: auto;
+  }
+
+  .hero-image {
+    object-position: 32% 50%;
+  }
+
+  .hero-identity {
+    top: 22%;
+    right: 2rem;
+    font-size: 0.74rem;
+  }
+
+  .hero-index {
+    right: 2rem;
+    bottom: 1.3rem;
   }
 
   .photo-grid {

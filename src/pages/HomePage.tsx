@@ -1,5 +1,5 @@
-import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { motion, useReducedMotion } from 'motion/react'
+import { ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { Seo } from '../components/Seo'
@@ -8,21 +8,41 @@ import {
   featuredPhotographs,
   getPhotosByCategory,
   heroPhotograph,
+  type Photograph,
 } from '../data/photography'
 import { siteContent } from '../data/site'
 
-const featuredLayouts = [
-  'md:col-span-12',
-  'md:col-span-7',
-  'md:col-span-5 md:mt-10',
-  'md:col-span-5 md:col-start-2',
-  'md:col-span-6 md:col-start-7 md:mt-6',
-]
+function FeaturedStill({ photo, index }: { photo: Photograph; index: number }) {
+  return (
+    <Link to={`/portfolio/${photo.category}`} className="group block">
+      <div className="image-frame relative overflow-hidden" style={{ aspectRatio: photo.aspectRatio }}>
+        <img
+          src={photo.src}
+          srcSet={photo.srcSet}
+          sizes="(min-width: 1024px) 60vw, 100vw"
+          alt={photo.alt}
+          width={photo.width}
+          height={photo.height}
+          loading="lazy"
+          className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-90"
+        />
+      </div>
+      <div className="photo-caption">
+        <span>
+          <span className="block text-[0.88rem]">{photo.title}</span>
+          {photo.location && (
+            <span className="mt-0.5 block text-[0.72rem] text-mist">{photo.location}</span>
+          )}
+        </span>
+        <span className="plate">{String(index + 1).padStart(2, '0')}</span>
+      </div>
+    </Link>
+  )
+}
 
 export function HomePage() {
   const reduceMotion = useReducedMotion()
-  const { scrollYProgress } = useScroll()
-  const heroY = useTransform(scrollYProgress, [0, 0.4], ['0%', reduceMotion ? '0%' : '3%'])
+  const selected = featuredPhotographs.slice(0, 5)
 
   return (
     <>
@@ -31,106 +51,85 @@ export function HomePage() {
         description="Cinematic landscape, atmospheric street, architecture, fine-art, and documentary photography from the Pacific Northwest."
       />
 
-      <section className="relative min-h-svh overflow-hidden">
-        <motion.img
-          src={heroPhotograph.src}
-          srcSet={heroPhotograph.srcSet}
-          sizes="100vw"
-          alt={heroPhotograph.alt}
-          width={heroPhotograph.width}
-          height={heroPhotograph.height}
-          className="absolute inset-0 h-[104%] w-full object-cover"
-          style={{ y: heroY }}
+      <section className="hero-stage">
+        <motion.div
+          className="hero-frame"
           initial={reduceMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/80" />
-        <div className="absolute inset-x-0 bottom-0 page-shell pb-8 md:pb-10">
-          <motion.div
-            initial={reduceMotion ? false : { opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-end justify-between gap-8"
-          >
-            <div className="max-w-3xl">
-              <p className="mb-3 text-[0.68rem] uppercase tracking-[0.28em] text-white/70">
-                Washington
-              </p>
-              <h1 className="font-serif text-[clamp(2.6rem,6.4vw,5.4rem)] leading-[0.92] tracking-[-0.03em] text-white">
-                Places. Moments.
-                <br />
-                <span className="italic">Everything between.</span>
-              </h1>
-              <p className="mt-4 max-w-md text-sm leading-6 text-white/70">
-                {heroPhotograph.title}
-                {heroPhotograph.location ? ` · ${heroPhotograph.location}` : ''}
-              </p>
-            </div>
-            <a
-              href="#introduction"
-              className="mb-1 hidden size-12 place-items-center rounded-full border border-white/30 text-white transition-colors hover:bg-white hover:text-ink md:grid"
-              aria-label="Continue to introduction"
-            >
-              <ArrowDown size={18} strokeWidth={1.3} />
-            </a>
-          </motion.div>
-        </div>
+          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <img
+            src={heroPhotograph.src}
+            srcSet={heroPhotograph.srcSet}
+            sizes="100vw"
+            alt={heroPhotograph.alt}
+            width={heroPhotograph.width}
+            height={heroPhotograph.height}
+            className="hero-image"
+          />
+          <p className="hero-identity">JJM / PHOTOGRAPHS</p>
+          <p className="hero-index">STILL 01 · {heroPhotograph.title}</p>
+        </motion.div>
       </section>
 
       <section id="introduction" className="section-space page-shell">
-        <Reveal className="grid gap-8 md:grid-cols-12 md:items-end">
-          <p className="eyebrow md:col-span-3">Justin McClure</p>
-          <div className="md:col-span-8 md:col-start-5">
-            <p className="max-w-xl text-[1.05rem] leading-8 text-stone/90">
+        <Reveal className="grid gap-6 md:grid-cols-12 md:items-start">
+          <p className="eyebrow md:col-span-3 md:pt-1">File / Intro</p>
+          <div className="md:col-span-7 md:col-start-5">
+            <p className="max-w-xl text-[1.02rem] leading-8 text-stone/90">
               {siteContent.home.introduction}
             </p>
-            <Link to="/portfolio" className="arrow-link mt-7">
-              The photographs <ArrowUpRight size={15} />
+            <Link to="/portfolio" className="arrow-link mt-6">
+              Enter the work <ArrowUpRight size={15} />
             </Link>
           </div>
         </Reveal>
       </section>
 
-      <section className="page-shell pb-20 md:pb-28">
+      <section className="page-shell pb-16 md:pb-24">
         <Reveal>
-          <div className="mb-6 flex items-end justify-between border-b border-white/8 pb-3">
-            <p className="eyebrow">Selected frames</p>
-            <span className="hidden text-[0.68rem] uppercase tracking-[0.18em] text-mist sm:block">
-              01—05
-            </span>
+          <div className="mb-5 flex items-end justify-between border-b border-white/8 pb-2">
+            <p className="eyebrow">Sel / 05</p>
+            <span className="plate">Selected stills</span>
           </div>
         </Reveal>
-        <div className="grid gap-4 md:grid-cols-12 md:gap-x-4 md:gap-y-8">
-          {featuredPhotographs.slice(0, 5).map((photo, index) => (
-            <Reveal key={photo.id} className={featuredLayouts[index]} delay={index * 0.04}>
-              <Link to={`/portfolio/${photo.category}`} className="group block">
-                <div className="image-frame relative overflow-hidden" style={{ aspectRatio: photo.aspectRatio }}>
-                  <img
-                    src={photo.src}
-                    srcSet={photo.srcSet}
-                    sizes="(min-width: 1024px) 70vw, 100vw"
-                    alt={photo.alt}
-                    width={photo.width}
-                    height={photo.height}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-90"
-                  />
-                </div>
-                <div className="photo-caption">
-                  <span className="text-[0.88rem]">{photo.title}</span>
-                  <span className="hidden text-[0.75rem] text-mist sm:block">{photo.location}</span>
-                </div>
-              </Link>
+        <div className="flex flex-col gap-5 md:gap-6">
+          {selected[0] && (
+            <Reveal>
+              <FeaturedStill photo={selected[0]} index={0} />
             </Reveal>
-          ))}
+          )}
+          <div className="featured-pair">
+            {selected[1] && (
+              <Reveal>
+                <FeaturedStill photo={selected[1]} index={1} />
+              </Reveal>
+            )}
+            {selected[2] && (
+              <Reveal delay={0.04}>
+                <FeaturedStill photo={selected[2]} index={2} />
+              </Reveal>
+            )}
+          </div>
+          <div className="featured-pair">
+            {selected[3] && (
+              <Reveal>
+                <FeaturedStill photo={selected[3]} index={3} />
+              </Reveal>
+            )}
+            {selected[4] && (
+              <Reveal delay={0.04}>
+                <FeaturedStill photo={selected[4]} index={4} />
+              </Reveal>
+            )}
+          </div>
         </div>
       </section>
 
       <section className="border-y border-white/8">
-        <div className="page-shell py-12 md:py-16">
+        <div className="page-shell py-10 md:py-14">
           <Reveal>
-            <p className="eyebrow mb-6">Collections</p>
+            <p className="eyebrow mb-5">Index / Collections</p>
           </Reveal>
           <div>
             {activeCategories.map((category, index) => {
@@ -139,12 +138,12 @@ export function HomePage() {
               return (
                 <Reveal key={category.slug}>
                   <Link to={`/portfolio/${category.slug}`} className="collection-row group">
-                    <span className="plate">0{index + 1}</span>
-                    <h3 className="font-serif text-2xl italic tracking-[-0.02em] md:text-[2rem]">
+                    <span className="plate">{String(index + 1).padStart(2, '0')}</span>
+                    <h3 className="font-serif text-[1.65rem] tracking-[-0.02em] md:text-[1.9rem]">
                       {category.name}
                     </h3>
                     <p className="text-sm leading-6 text-mist">{category.eyebrow}</p>
-                    <span className="absolute right-0 top-1/2 -translate-y-1/2 text-[0.7rem] text-mist md:static md:translate-y-0">
+                    <span className="absolute right-0 top-1/2 -translate-y-1/2 plate md:static md:translate-y-0">
                       {String(photos.length).padStart(2, '0')}
                     </span>
                     <img
@@ -165,13 +164,13 @@ export function HomePage() {
       </section>
 
       <section className="section-space page-shell">
-        <Reveal className="grid gap-6 md:grid-cols-12 md:items-end">
-          <p className="eyebrow md:col-span-3">Correspondence</p>
-          <div className="md:col-span-8 md:col-start-5">
-            <p className="max-w-lg font-serif text-3xl leading-snug tracking-[-0.02em] md:text-4xl">
+        <Reveal className="grid gap-5 md:grid-cols-12 md:items-end">
+          <p className="eyebrow md:col-span-3">Corr / 00</p>
+          <div className="md:col-span-7 md:col-start-5">
+            <p className="max-w-lg text-[1.15rem] leading-8 text-stone/90">
               If something stays with you, write.
             </p>
-            <Link to="/contact" className="arrow-link mt-6">
+            <Link to="/contact" className="arrow-link mt-5">
               Contact <ArrowUpRight size={15} />
             </Link>
           </div>

@@ -1,4 +1,4 @@
-import { generatedPhotos } from './photos.generated'
+import { generatedHero, generatedPhotos } from './photos.generated'
 
 export type CategorySlug =
   | 'travel-landscape'
@@ -133,8 +133,32 @@ const toPhotograph = (
 
 export const photographs = generated.map((photo) => toPhotograph(photo))
 
-export const heroPhotograph =
-  photographs.find((photo) => photo.hero) ?? photographs[0]
+const heroSource =
+  photographs.find((photo) => photo.title === 'Moss Portal') ??
+  photographs.find((photo) => photo.hero) ??
+  photographs[0]
+
+const heroStill = generatedHero as unknown as {
+  src: string
+  srcSet: string
+  thumbnailSrc: string
+  width: number
+  height: number
+  aspectRatio: string
+} | null
+
+export const heroPhotograph: Photograph = heroStill
+  ? {
+      ...heroSource,
+      src: heroStill.src,
+      srcSet: heroStill.srcSet,
+      thumbnailSrc: heroStill.thumbnailSrc,
+      width: heroStill.width,
+      height: heroStill.height,
+      aspectRatio: heroStill.aspectRatio,
+      hero: true,
+    }
+  : heroSource
 
 export const portraitPhotograph =
   photographs.find((photo) => photo.portrait) ?? photographs[0]

@@ -29,7 +29,7 @@ export function GalleryPage() {
           <div className="grid gap-4 border-b border-white/8 pb-5 md:grid-cols-12 md:items-end">
             <div className="md:col-span-7">
               <p className="eyebrow">{category.eyebrow}</p>
-              <h1 className="mt-3 font-serif text-[clamp(2.6rem,6vw,4.6rem)] leading-[0.92] tracking-[-0.03em]">
+              <h1 className="mt-3 font-serif text-[clamp(2.4rem,5.4vw,4.1rem)] leading-[0.94] tracking-[-0.025em]">
                 {category.name}
               </h1>
             </div>

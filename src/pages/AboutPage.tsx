@@ -15,7 +15,7 @@ export function AboutPage() {
       <header className="page-shell pb-8 pt-28 md:pb-10 md:pt-36">
         <Reveal>
           <p className="eyebrow">About</p>
-          <h1 className="mt-4 max-w-3xl font-serif text-[clamp(2.8rem,6.5vw,5rem)] leading-[0.94] tracking-[-0.03em]">
+          <h1 className="mt-4 max-w-3xl font-serif text-[clamp(2.4rem,5.5vw,4.2rem)] leading-[0.96] tracking-[-0.025em]">
             {siteContent.about.heading}
           </h1>
         </Reveal>

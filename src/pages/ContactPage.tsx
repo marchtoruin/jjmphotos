@@ -14,7 +14,7 @@ export function ContactPage() {
         <div className="grid w-full gap-12 md:grid-cols-12 md:items-end">
           <Reveal className="md:col-span-7">
             <p className="eyebrow">Contact</p>
-            <h1 className="mt-4 font-serif text-[clamp(3rem,8vw,6rem)] leading-[0.88] tracking-[-0.035em]">
+            <h1 className="mt-4 font-serif text-[clamp(2.6rem,6vw,4.4rem)] leading-[0.92] tracking-[-0.03em]">
               Say hello.
             </h1>
             <p className="mt-7 max-w-xl text-[1.05rem] leading-8 text-mist">

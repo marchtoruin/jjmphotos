@@ -83,6 +83,7 @@ async function createWorkspace() {
     async build() {
       return buildPhotos({
         originalsRoot,
+        heroRoot: path.join(root, 'photos/hero'),
         metadataPath,
         outputRoot,
         generatedDataPath,
@@ -93,9 +94,9 @@ async function createWorkspace() {
 }
 
 function parseGenerated(source) {
-  return JSON.parse(
-    source.replace(/^[\s\S]*?export const generatedPhotos = /, '').replace(/ as const\s*$/, ''),
-  )
+  const match = source.match(/export const generatedPhotos = ([\s\S]*?) as const/)
+  if (!match) throw new Error('generatedPhotos export not found')
+  return JSON.parse(match[1])
 }
 
 test('title and order helpers format filenames predictably', () => {
@@ -219,4 +220,23 @@ test('reuses unchanged generated files and never writes originals', async (t) =>
 
   const generated = parseGenerated(await readFile(workspace.generatedDataPath, 'utf8'))
   assert.equal(generated[0].src.startsWith('/images/generated/'), true)
+})
+
+test('homepage hero crop is optimized without changing gallery originals', async (t) => {
+  const workspace = await createWorkspace()
+  t.after(() => rm(workspace.root, { recursive: true, force: true }))
+
+  const galleryPath = path.join(workspace.originalsRoot, 'Puget Sound', 'harbor-hero.jpg')
+  const before = await stat(galleryPath)
+  await writeJpeg(path.join(workspace.root, 'photos/hero', 'moss-portal-16x9.jpg'), '#1a2a1a')
+
+  const result = await workspace.build()
+  assert.equal(result.hero?.id, 'hero-moss-portal')
+  assert.equal(result.hero?.width / result.hero?.height, 80 / 60)
+  assert.equal(result.photos.some((photo) => photo.id === 'hero-moss-portal'), false)
+  assert.ok(result.hero.src.includes('hero-moss-portal'))
+
+  const after = await stat(galleryPath)
+  assert.equal(after.mtimeMs, before.mtimeMs)
+  assert.equal(after.size, before.size)
 })

@@ -187,7 +187,7 @@ export function Lightbox({
 
           <div className="flex min-h-20 items-start justify-between gap-5 px-5 py-4 md:px-8">
             <div>
-              <h2 className="font-serif text-xl italic tracking-[-0.02em] text-stone">{photo.title}</h2>
+              <h2 className="text-base tracking-[-0.01em] text-stone">{photo.title}</h2>
               {photo.location && <p className="mt-1 text-sm text-mist">{photo.location}</p>}
             </div>
           </div>

@@ -32,9 +32,10 @@ export function Layout({ children }: PropsWithChildren) {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="fixed inset-x-0 top-0 z-40 border-b border-white/6 bg-ink/80 backdrop-blur-md">
         <div className="page-shell flex h-16 items-center justify-between">
-          <Link to="/" className="group flex items-baseline gap-3" aria-label="JJM Photography home">
-            <span className="text-[0.95rem] tracking-[0.28em]">JJM</span>
-            <span className="hidden text-[0.65rem] uppercase tracking-[0.28em] text-mist transition-colors group-hover:text-stone sm:inline">
+          <Link to="/" className="group flex items-baseline gap-2" aria-label="JJM Photography home">
+            <span className="text-[0.78rem] tracking-[0.22em]">JJM</span>
+            <span className="text-mist">/</span>
+            <span className="hidden text-[0.62rem] uppercase tracking-[0.22em] text-mist transition-colors group-hover:text-stone sm:inline">
               Photographs
             </span>
           </Link>
@@ -82,7 +83,7 @@ export function Layout({ children }: PropsWithChildren) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <NavLink to={item.to} className="font-serif text-4xl italic">
+                  <NavLink to={item.to} className="font-serif text-4xl">
                     {item.label}
                   </NavLink>
                 </motion.div>
