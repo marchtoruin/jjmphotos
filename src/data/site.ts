@@ -4,7 +4,7 @@ export const siteContent = {
   home: {
     statement: 'Places. Moments. Everything in between.',
     introduction:
-      'Photographs of quiet moments, changing light, and everyday places—close to home in Washington and further afield.',
+      'The moments between things. Places in transition. Familiar scenes that feel briefly unfamiliar. Photographs of a world that never quite stands still.',
   },
   about: {
     heading: 'Hi, I’m Justin.',
