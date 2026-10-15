@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Reveal } from '../components/Reveal'
 import { Seo } from '../components/Seo'
@@ -11,45 +10,51 @@ export function PortfolioPage() {
         title="Portfolio — JJM Photography"
         description="Explore landscape, atmospheric street, architecture, fine-art, and documentary photography by JJM Photography."
       />
-      <header className="page-shell pb-18 pt-40 md:pb-28 md:pt-52">
+      <header className="page-shell pb-8 pt-28 md:pb-10 md:pt-36">
         <Reveal>
-          <p className="eyebrow">Selected work · 2024—2026</p>
-          <h1 className="mt-7 max-w-5xl font-serif text-[clamp(4.5rem,11vw,11rem)] leading-[0.8] tracking-[-0.045em]">
-            Portfolio
-          </h1>
-          <p className="ml-auto mt-12 max-w-xl text-lg leading-8 text-mist">
-            Evolving collections exploring the natural world, city atmosphere, and the human moments found between.
-          </p>
+          <p className="eyebrow">The work</p>
+          <div className="mt-5 grid gap-6 md:grid-cols-12 md:items-end">
+            <h1 className="font-serif text-[clamp(3rem,7vw,5.5rem)] leading-[0.9] tracking-[-0.035em] md:col-span-6">
+              Portfolio
+            </h1>
+            <p className="max-w-md text-[0.95rem] leading-7 text-mist md:col-span-5 md:col-start-8">
+              Collections of land, weather, city light, and the people found between.
+            </p>
+          </div>
         </Reveal>
       </header>
 
-      <div className="page-shell pb-28 md:pb-40">
+      <div className="page-shell pb-20 md:pb-28">
         {activeCategories.map((category, index) => {
-          const cover = getPhotosByCategory(category.slug)[0]
+          const photos = getPhotosByCategory(category.slug)
+          const cover = photos[0]
           return (
-            <Reveal key={category.slug} className="border-t border-white/12 py-10 md:py-16">
+            <Reveal key={category.slug} className="border-t border-white/8 py-7 md:py-8">
               <Link
                 to={`/portfolio/${category.slug}`}
-                className="group grid gap-8 md:grid-cols-12 md:items-center"
+                className="group grid gap-5 md:grid-cols-12 md:items-center"
               >
-                <div className="overflow-hidden bg-white/4 md:col-span-6">
+                <div className="image-frame overflow-hidden md:col-span-5">
                   <img
                     src={cover.src}
                     srcSet={cover.srcSet}
-                    sizes="(min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 768px) 40vw, 100vw"
                     alt={cover.alt}
                     width={cover.width}
                     height={cover.height}
                     loading={index === 0 ? 'eager' : 'lazy'}
-                    className="aspect-[16/10] h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                    style={{ aspectRatio: cover.aspectRatio }}
+                    className="w-full object-cover transition-opacity duration-500 group-hover:opacity-90"
                   />
                 </div>
-                <div className="md:col-span-5 md:col-start-8">
-                  <span className="eyebrow">0{index + 1} · {category.eyebrow}</span>
-                  <h2 className="mt-5 font-serif text-4xl leading-none md:text-6xl">{category.name}</h2>
-                  <p className="mt-6 max-w-lg text-[0.95rem] leading-7 text-mist">{category.description}</p>
-                  <span className="arrow-link mt-8">
-                    View collection <ArrowUpRight size={16} />
+                <div className="md:col-span-6 md:col-start-7">
+                  <span className="plate">0{index + 1} · {category.eyebrow}</span>
+                  <h2 className="mt-3 font-serif text-3xl italic leading-none tracking-[-0.02em] md:text-5xl">
+                    {category.name}
+                  </h2>
+                  <p className="mt-4 max-w-lg text-[0.92rem] leading-7 text-mist">{category.description}</p>
+                  <span className="arrow-link mt-5">
+                    {String(photos.length).padStart(2, '0')} photographs
                   </span>
                 </div>
               </Link>

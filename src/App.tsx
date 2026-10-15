@@ -19,7 +19,7 @@ function AnimatedRoutes() {
         initial={reduceMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: reduceMotion ? 0 : 0.28 }}
+        transition={{ duration: reduceMotion ? 0 : 0.22 }}
       >
         <Routes location={location}>
           <Route path="/" element={<HomePage />} />

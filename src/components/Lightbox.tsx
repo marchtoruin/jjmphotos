@@ -86,7 +86,7 @@ export function Lightbox({
       {photo && (
         <motion.div
           ref={dialog}
-          className="fixed inset-0 z-50 flex flex-col bg-[#090a09]/98"
+          className="fixed inset-0 z-50 flex flex-col bg-void/98"
           role="dialog"
           aria-modal="true"
           aria-label={`Viewing ${photo.title}`}
@@ -95,18 +95,18 @@ export function Lightbox({
           exit={{ opacity: 0 }}
           transition={{ duration: reduceMotion ? 0 : 0.3 }}
         >
-          <div className="flex h-18 items-center justify-between px-5 md:px-8">
-            <p className="text-[0.72rem] uppercase tracking-[0.24em] text-mist">
-              {(activeIndex ?? 0) + 1} / {photos.length}
+          <div className="flex h-16 items-center justify-between px-5 md:px-8">
+            <p className="plate">
+              {String((activeIndex ?? 0) + 1).padStart(2, '0')} / {String(photos.length).padStart(2, '0')}
             </p>
             <button
               ref={closeButton}
               type="button"
               onClick={onClose}
-              className="grid size-11 place-items-center rounded-full border border-white/15 transition-colors hover:bg-white hover:text-ink"
+              className="grid size-10 place-items-center border border-white/15 transition-colors hover:bg-stone hover:text-ink"
               aria-label="Close image viewer"
             >
-              <X size={19} strokeWidth={1.4} />
+              <X size={18} strokeWidth={1.4} />
             </button>
           </div>
 
@@ -124,7 +124,7 @@ export function Lightbox({
               <motion.div
                 key={photo.id}
                 layoutId={sharedPhotoId === photo.id ? `photo-${photo.id}` : undefined}
-                className="relative max-h-full max-w-full overflow-hidden bg-[#111210]"
+                className="relative max-h-full max-w-full overflow-hidden bg-void"
                 style={{
                   aspectRatio: photo.aspectRatio,
                   width: `min(100%, calc((100vh - 10.5rem) * ${photo.width / photo.height}))`,
@@ -185,9 +185,9 @@ export function Lightbox({
             </button>
           </motion.div>
 
-          <div className="flex min-h-24 items-start justify-between gap-5 px-5 py-5 md:px-8">
+          <div className="flex min-h-20 items-start justify-between gap-5 px-5 py-4 md:px-8">
             <div>
-              <h2 className="text-base text-stone">{photo.title}</h2>
+              <h2 className="font-serif text-xl italic tracking-[-0.02em] text-stone">{photo.title}</h2>
               {photo.location && <p className="mt-1 text-sm text-mist">{photo.location}</p>}
             </div>
           </div>

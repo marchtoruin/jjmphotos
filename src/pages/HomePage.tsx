@@ -11,10 +11,18 @@ import {
 } from '../data/photography'
 import { siteContent } from '../data/site'
 
+const featuredLayouts = [
+  'md:col-span-12',
+  'md:col-span-7',
+  'md:col-span-5 md:mt-10',
+  'md:col-span-5 md:col-start-2',
+  'md:col-span-6 md:col-start-7 md:mt-6',
+]
+
 export function HomePage() {
   const reduceMotion = useReducedMotion()
   const { scrollYProgress } = useScroll()
-  const heroY = useTransform(scrollYProgress, [0, 0.45], ['0%', reduceMotion ? '0%' : '8%'])
+  const heroY = useTransform(scrollYProgress, [0, 0.4], ['0%', reduceMotion ? '0%' : '3%'])
 
   return (
     <>
@@ -31,100 +39,87 @@ export function HomePage() {
           alt={heroPhotograph.alt}
           width={heroPhotograph.width}
           height={heroPhotograph.height}
-          className="absolute inset-0 h-[108%] w-full object-cover"
+          className="absolute inset-0 h-[104%] w-full object-cover"
           style={{ y: heroY }}
-          initial={reduceMotion ? false : { scale: 1.04, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+          initial={reduceMotion ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/5 to-black/75" />
-        <div className="absolute inset-x-0 bottom-0 page-shell pb-10 md:pb-14">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/80" />
+        <div className="absolute inset-x-0 bottom-0 page-shell pb-8 md:pb-10">
           <motion.div
-            initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+            initial={reduceMotion ? false : { opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-end justify-between"
+            transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            className="flex items-end justify-between gap-8"
           >
-            <div>
-              <p className="mb-4 text-[0.7rem] uppercase tracking-[0.3em] text-white/80">
-                Pacific Northwest · Washington
+            <div className="max-w-3xl">
+              <p className="mb-3 text-[0.68rem] uppercase tracking-[0.28em] text-white/70">
+                Washington
               </p>
-              <h1 className="max-w-4xl font-serif text-[clamp(3.3rem,8vw,8rem)] leading-[0.86] tracking-[-0.035em] text-white">
+              <h1 className="font-serif text-[clamp(2.6rem,6.4vw,5.4rem)] leading-[0.92] tracking-[-0.03em] text-white">
                 Places. Moments.
                 <br />
                 <span className="italic">Everything between.</span>
               </h1>
+              <p className="mt-4 max-w-md text-sm leading-6 text-white/70">
+                {heroPhotograph.title}
+                {heroPhotograph.location ? ` · ${heroPhotograph.location}` : ''}
+              </p>
             </div>
             <a
               href="#introduction"
-              className="mb-1 hidden size-14 place-items-center rounded-full border border-white/35 text-white transition-colors hover:bg-white hover:text-ink md:grid"
+              className="mb-1 hidden size-12 place-items-center rounded-full border border-white/30 text-white transition-colors hover:bg-white hover:text-ink md:grid"
               aria-label="Continue to introduction"
             >
-              <ArrowDown size={20} strokeWidth={1.3} />
+              <ArrowDown size={18} strokeWidth={1.3} />
             </a>
           </motion.div>
         </div>
       </section>
 
       <section id="introduction" className="section-space page-shell">
-        <Reveal className="grid gap-12 md:grid-cols-12 md:items-end">
-          <p className="eyebrow md:col-span-3">Photography by Justin</p>
+        <Reveal className="grid gap-8 md:grid-cols-12 md:items-end">
+          <p className="eyebrow md:col-span-3">Justin McClure</p>
           <div className="md:col-span-8 md:col-start-5">
-            <h2 className="font-serif text-[clamp(2.5rem,5.3vw,5.8rem)] leading-[0.98] tracking-[-0.025em]">
-              Images rooted in atmosphere, observation, and a sense of place.
-            </h2>
-            <div className="mt-10 flex flex-col gap-8 border-t border-white/12 pt-7 sm:flex-row sm:items-start sm:justify-between">
-              <p className="max-w-lg text-base leading-7 text-mist">{siteContent.home.introduction}</p>
-              <Link to="/portfolio" className="arrow-link shrink-0">
-                Explore all work <ArrowUpRight size={16} />
-              </Link>
-            </div>
+            <p className="max-w-xl text-[1.05rem] leading-8 text-stone/90">
+              {siteContent.home.introduction}
+            </p>
+            <Link to="/portfolio" className="arrow-link mt-7">
+              The photographs <ArrowUpRight size={15} />
+            </Link>
           </div>
         </Reveal>
       </section>
 
-      <section className="page-shell pb-28 md:pb-40">
+      <section className="page-shell pb-20 md:pb-28">
         <Reveal>
-          <div className="mb-8 flex items-end justify-between">
-            <div>
-              <p className="eyebrow">Selected photographs</p>
-              <h2 className="mt-4 font-serif text-4xl md:text-6xl">Recent frames</h2>
-            </div>
-            <span className="hidden text-[0.8rem] text-mist sm:block">A curated edit · 01—05</span>
+          <div className="mb-6 flex items-end justify-between border-b border-white/8 pb-3">
+            <p className="eyebrow">Selected frames</p>
+            <span className="hidden text-[0.68rem] uppercase tracking-[0.18em] text-mist sm:block">
+              01—05
+            </span>
           </div>
         </Reveal>
-        <div className="grid gap-5 md:grid-cols-12 md:gap-y-20">
+        <div className="grid gap-4 md:grid-cols-12 md:gap-x-4 md:gap-y-8">
           {featuredPhotographs.slice(0, 5).map((photo, index) => (
-            <Reveal
-              key={photo.id}
-              className={
-                index === 0
-                  ? 'md:col-span-7'
-                  : index === 1
-                    ? 'md:col-span-4 md:col-start-9 md:mt-32'
-                    : index === 2
-                      ? 'md:col-span-4 md:col-start-2'
-                      : index === 3
-                        ? 'md:col-span-6 md:col-start-7 md:mt-20'
-                        : 'md:col-span-8 md:col-start-3 md:mt-12'
-              }
-            >
+            <Reveal key={photo.id} className={featuredLayouts[index]} delay={index * 0.04}>
               <Link to={`/portfolio/${photo.category}`} className="group block">
-                <div className="relative overflow-hidden bg-white/4" style={{ aspectRatio: photo.aspectRatio }}>
+                <div className="image-frame relative overflow-hidden" style={{ aspectRatio: photo.aspectRatio }}>
                   <img
                     src={photo.src}
                     srcSet={photo.srcSet}
-                    sizes="(min-width: 1024px) 55vw, (min-width: 640px) 50vw, 100vw"
+                    sizes="(min-width: 1024px) 70vw, 100vw"
                     alt={photo.alt}
                     width={photo.width}
                     height={photo.height}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                    className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-90"
                   />
                 </div>
-                <div className="mt-3 flex flex-col gap-1 text-[0.9375rem] sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                  <span>{photo.title}</span>
-                  <span className="text-sm text-mist sm:max-w-[48%] sm:text-right">{photo.location}</span>
+                <div className="photo-caption">
+                  <span className="text-[0.88rem]">{photo.title}</span>
+                  <span className="hidden text-[0.75rem] text-mist sm:block">{photo.location}</span>
                 </div>
               </Link>
             </Reveal>
@@ -132,34 +127,34 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-white/10">
-        <div className="page-shell py-20 md:py-32">
+      <section className="border-y border-white/8">
+        <div className="page-shell py-12 md:py-16">
           <Reveal>
-            <p className="eyebrow mb-12">Explore by collection</p>
+            <p className="eyebrow mb-6">Collections</p>
           </Reveal>
           <div>
             {activeCategories.map((category, index) => {
-              const cover = getPhotosByCategory(category.slug)[0]
+              const photos = getPhotosByCategory(category.slug)
+              const cover = photos[0]
               return (
                 <Reveal key={category.slug}>
-                  <Link
-                    to={`/portfolio/${category.slug}`}
-                    className="category-row group relative grid items-center gap-4 border-t border-white/12 py-7 pr-10 last:border-b md:grid-cols-12 md:py-10 md:pr-0"
-                  >
-                    <span className="text-[0.75rem] text-mist md:col-span-1">0{index + 1}</span>
-                    <h3 className="font-serif text-3xl transition-transform duration-500 group-hover:translate-x-2 md:col-span-6 md:text-5xl">
+                  <Link to={`/portfolio/${category.slug}`} className="collection-row group">
+                    <span className="plate">0{index + 1}</span>
+                    <h3 className="font-serif text-2xl italic tracking-[-0.02em] md:text-[2rem]">
                       {category.name}
                     </h3>
-                    <p className="max-w-sm text-[0.9375rem] leading-6 text-mist md:col-span-4">{category.eyebrow}</p>
-                    <ArrowUpRight className="absolute right-0 top-8 md:static md:justify-self-end" size={21} strokeWidth={1.3} />
+                    <p className="text-sm leading-6 text-mist">{category.eyebrow}</p>
+                    <span className="absolute right-0 top-1/2 -translate-y-1/2 text-[0.7rem] text-mist md:static md:translate-y-0">
+                      {String(photos.length).padStart(2, '0')}
+                    </span>
                     <img
                       src={cover.thumbnailSrc}
                       srcSet={cover.srcSet}
-                      sizes="224px"
+                      sizes="180px"
                       alt=""
                       width={cover.width}
                       height={cover.height}
-                      className="pointer-events-none absolute right-14 z-10 hidden h-40 w-56 -translate-y-1/2 rotate-2 object-cover opacity-0 transition-all duration-500 group-hover:-translate-y-[55%] group-hover:opacity-100 lg:block"
+                      className="pointer-events-none absolute right-16 z-10 hidden h-28 w-40 object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100 lg:block"
                     />
                   </Link>
                 </Reveal>
@@ -170,14 +165,14 @@ export function HomePage() {
       </section>
 
       <section className="section-space page-shell">
-        <Reveal className="grid gap-10 md:grid-cols-12 md:items-end">
-          <p className="eyebrow md:col-span-3">Get in touch</p>
+        <Reveal className="grid gap-6 md:grid-cols-12 md:items-end">
+          <p className="eyebrow md:col-span-3">Correspondence</p>
           <div className="md:col-span-8 md:col-start-5">
-            <h2 className="font-serif text-[clamp(2.8rem,6vw,6.5rem)] leading-[0.95]">
-              See something you like, or have an idea in mind?
-            </h2>
-            <Link to="/contact" className="arrow-link mt-10">
-              Say hello <ArrowUpRight size={16} />
+            <p className="max-w-lg font-serif text-3xl leading-snug tracking-[-0.02em] md:text-4xl">
+              If something stays with you, write.
+            </p>
+            <Link to="/contact" className="arrow-link mt-6">
+              Contact <ArrowUpRight size={15} />
             </Link>
           </div>
         </Reveal>

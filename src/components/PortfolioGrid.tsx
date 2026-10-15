@@ -8,6 +8,13 @@ interface PortfolioGridProps {
   photos: Photograph[]
 }
 
+function photoShape(photo: Photograph) {
+  const ratio = photo.width / photo.height
+  if (ratio >= 1.5) return 'wide'
+  if (ratio <= 0.8) return 'tall'
+  return 'standard'
+}
+
 export function PortfolioGrid({ photos }: PortfolioGridProps) {
   const reduceMotion = useReducedMotion()
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
@@ -53,7 +60,7 @@ export function PortfolioGrid({ photos }: PortfolioGridProps) {
     <LayoutGroup id="portfolio-lightbox">
       <div className="photo-grid">
         {photos.map((photo, index) => (
-          <Reveal key={photo.id} className="photo-grid-item" delay={(index % 3) * 0.06}>
+          <Reveal key={photo.id} className={`photo-grid-item photo-shape-${photoShape(photo)}`} delay={(index % 4) * 0.03}>
             <button
               ref={(element) => {
                 if (element) triggerButtons.current.set(photo.id, element)
@@ -71,7 +78,7 @@ export function PortfolioGrid({ photos }: PortfolioGridProps) {
                     ? { duration: 0 }
                     : { type: 'spring', stiffness: 340, damping: 34 }
                 }
-                className="image-frame relative overflow-hidden bg-white/4"
+                className="image-frame relative overflow-hidden"
                 style={{ aspectRatio: photo.aspectRatio }}
               >
                 <img
@@ -87,17 +94,19 @@ export function PortfolioGrid({ photos }: PortfolioGridProps) {
                   height={photo.height}
                   loading={index < 2 ? 'eager' : 'lazy'}
                   decoding="async"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                  className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-90"
                 />
-                <span className="absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/10" />
               </motion.div>
-              <span className="mt-3 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                <span className="text-[0.9375rem] text-stone">{photo.title}</span>
-                {photo.location && (
-                  <span className="text-sm leading-5 text-mist sm:max-w-[48%] sm:text-right">
-                    {photo.location}
-                  </span>
-                )}
+              <span className="photo-caption">
+                <span className="min-w-0">
+                  <span className="block text-[0.88rem] text-stone">{photo.title}</span>
+                  {photo.location && (
+                    <span className="mt-0.5 block text-[0.75rem] leading-5 text-mist">
+                      {photo.location}
+                    </span>
+                  )}
+                </span>
+                <span className="plate shrink-0">{String(index + 1).padStart(2, '0')}</span>
               </span>
             </button>
           </Reveal>
