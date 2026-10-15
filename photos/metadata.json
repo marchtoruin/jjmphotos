@@ -72,7 +72,7 @@
       "orderByGallery": {
         "travel-landscape": 5
       },
-      "featuredOrder": 1
+      "featuredOrder": 4
     },
     "BK7A0605.jpg": {
       "id": "tl-06",
@@ -135,8 +135,7 @@
       "location": "Puget Sound, Washington",
       "orderByGallery": {
         "travel-landscape": 12
-      },
-      "hero": true
+      }
     },
     "BK7A0641.jpg": {
       "id": "tl-13",
@@ -190,7 +189,8 @@
       "location": "Seattle, Washington",
       "orderByGallery": {
         "travel-landscape": 18
-      }
+      },
+      "featuredOrder": 1
     },
     "BK7A0716-Edit.jpg": {
       "id": "tl-19",
@@ -219,7 +219,7 @@
       "orderByGallery": {
         "travel-landscape": 21
       },
-      "featuredOrder": 4
+      "hero": true
     },
     "BK7A1059.jpg": {
       "id": "tl-22",
