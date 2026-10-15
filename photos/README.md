@@ -1,90 +1,128 @@
-# Photography workflow
+# How to manage photographs
 
-All photography is controlled by two things:
+You manage the site by moving files in `photos/originals/`. You do not need to edit React code, resize images, or type JSON for everyday changes.
 
-- Untouched source files in `photos/originals/`
-- One metadata file: `photos/manifest.json`
+Each folder is a gallery:
 
-You never need to resize photographs or edit a React component.
+- `Atmosphere`
+- `Japan`
+- `People`
+- `Puget Sound`
+- `Architecture & Spaces` (ready for new work)
+- `Fine Art & Personal Work` (ready for new work)
+
+Original files stay untouched. The build only reads them and creates web-sized copies in `public/images/generated/`.
+
+## Preview your changes
+
+From the project folder:
+
+```bash
+npm run dev
+```
+
+That one command prepares the photographs and opens the local site. To make a production build instead:
+
+```bash
+npm run build
+```
 
 ## Add a photograph
 
-1. Copy the original file into `photos/originals/`. You can use folders organized by shoot, year, or location.
-2. Add one object to the `photos` array in `manifest.json`:
+1. Open `photos/originals/`.
+2. Drag the file into the gallery folder you want.
+3. Run `npm run dev` or `npm run build`.
 
-```json
-{
-  "id": "rainier-first-light",
-  "source": "cascades/rainier-first-light.jpg",
-  "title": "First Light",
-  "description": "Mount Rainier emerging through morning cloud",
-  "location": "Mount Rainier National Park, Washington",
-  "galleries": [
-    {
-      "slug": "travel-landscape",
-      "order": 40
-    }
-  ]
-}
+The new photograph appears in that gallery. The displayed title comes from the filename.
+
+Supported files: `.jpg`, `.jpeg`, `.png`, `.webp`, `.tif`, `.tiff`, and `.avif`.
+
+## Rename a photograph
+
+Rename the file. The next build uses the new filename as the title.
+
+`rainy-street.jpg` becomes **Rainy Street**.  
+`Harbor Afterglow.jpg` stays **Harbor Afterglow**.
+
+If you rename a photograph that already has a custom title, that custom title is no longer used unless you also rename its entry in `metadata.json`.
+
+## Reorder photographs
+
+Add a number to the start of the filename:
+
+```text
+01 - Rainy Street.jpg
+02 - Temple Gate.jpg
 ```
 
-3. Run `npm run dev`. Responsive images are generated before the site opens.
+Lower numbers appear first. The number is not shown in the title.
 
-The `id` must be unique and use lowercase letters, numbers, and hyphens. `description` is the accessible image description.
+Photographs without a number keep their current order, or appear at the end if they are new.
 
-## Reorder or recategorize
+## Move a photograph
 
-Change `order` to change a photograph’s position. Lower numbers appear first.
-
-Available gallery slugs:
-
-- `travel-landscape`
-- `japan`
-- `atmosphere`
-- `architecture-spaces`
-- `fine-art`
-- `people-moments`
-
-One source can appear in multiple galleries:
-
-```json
-"galleries": [
-  { "slug": "travel-landscape", "order": 8 },
-  { "slug": "fine-art", "order": 3 }
-]
-```
-
-No source file is duplicated.
-
-## Homepage and About selections
-
-- `"featuredOrder": 1` includes a photograph in the homepage selection. The four lowest numbers are shown.
-- `"hero": true` makes it the homepage hero. Exactly one photograph must have this setting.
-- `"portrait": true` makes it the About-page portrait. Exactly one photograph must have this setting.
+Drag it from one gallery folder into another. The next build shows it in the new gallery.
 
 ## Remove a photograph
 
-Delete its entry from `manifest.json`. Delete its source file too if you no longer want to retain it.
+Delete the file from its folder. The next build removes it from the website and deletes its generated web copies. The original is only deleted if you delete it.
 
-The next `npm run dev` or `npm run build` removes all obsolete generated versions automatically.
+## Homepage hero, featured photos, and the About portrait
 
-## Optional fields
+These special placements live in `photos/metadata.json`. Find the filename and add or change:
 
-- `location`: Location displayed beneath the photograph
-- `caption`: Additional internal or display text
-- `featuredOrder`: Homepage selection and order
-- `hero`: Homepage hero selection
-- `portrait`: About portrait selection
+```json
+"BK7A0636.jpg": {
+  "hero": true
+}
+```
 
-## Generated output
+```json
+"BK7A0602.jpg": {
+  "featuredOrder": 1
+}
+```
 
-`npm run photos:build` can be run independently. It:
+```json
+"mePhoto.jpg": {
+  "portrait": true
+}
+```
 
-- Validates the manifest
-- Preserves the source image’s orientation and aspect ratio
-- Creates responsive WebP files at 480, 768, 1200, 1800, and 2400 px where applicable
-- Creates thumbnail-sized variants
-- Writes intrinsic dimensions and responsive `srcset` data for React
-- Deletes stale generated files
+Exactly one photograph must be the hero, and exactly one must be the portrait.
 
-Generated files are intentionally excluded from version control because local development and Netlify recreate them automatically. Original files are read only and are never overwritten.
+`metadata.json` also stores the current custom titles, alt text, locations, and gallery order so existing photographs stay as they are. New photographs do not need an entry.
+
+## Optional details
+
+You only need `metadata.json` when you want something the filename cannot do:
+
+- A custom title that does not match the filename
+- Alt text (`description`)
+- A location line under the title
+- Showing one photograph in a second gallery
+- Featured, hero, or portrait selections
+
+Example:
+
+```json
+"rainy-street.jpg": {
+  "title": "Rain Over Akihabara",
+  "description": "A figure with an umbrella on a wet Tokyo street",
+  "location": "Tokyo, Japan",
+  "additionalGalleries": [{ "slug": "atmosphere", "order": 40 }]
+}
+```
+
+## Generated files
+
+`npm run photos:build` (also run by `dev` and `build`):
+
+- Reads the folder layout
+- Leaves original files alone
+- Creates responsive WebP files at 480, 768, 1200, 1800, and 2400 px where the original is large enough
+- Reuses generated files when a photograph has not changed
+- Removes leftover generated files for photographs you deleted or renamed
+- Writes `src/data/photos.generated.ts` for the website
+
+You can delete everything in `public/images/generated/` at any time. The next build recreates what the site needs.

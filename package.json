@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "photos:build": "node scripts/build-photos.mjs",
+    "photos:test": "node --test scripts/test-photo-pipeline.mjs",
     "dev": "npm run photos:build && vite",
     "build": "npm run photos:build && tsc && vite build",
     "preview": "vite preview",
-    "photos:check": "npm run photos:build && tsc --noEmit"
+    "photos:check": "npm run photos:build && tsc --noEmit",
+    "test": "npm run photos:test"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

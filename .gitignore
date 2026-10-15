@@ -14,6 +14,7 @@ dist-ssr
 public/images/generated/
 src/data/photos.generated.ts
 .image-previews/
+scripts/.baseline-photos.json
 
 # Editor directories and files
 .vscode/*

@@ -1,0 +1,1462 @@
+{
+  "version": 2,
+  "note": "Optional overrides keyed by filename. New photographs do not need an entry. Moving a file keeps these settings; renaming it starts fresh unless you also rename the key here.",
+  "categories": [
+    {
+      "folder": "Atmosphere",
+      "slug": "atmosphere"
+    },
+    {
+      "folder": "Japan",
+      "slug": "japan"
+    },
+    {
+      "folder": "People",
+      "slug": "people-moments"
+    },
+    {
+      "folder": "Puget Sound",
+      "slug": "travel-landscape"
+    },
+    {
+      "folder": "Architecture & Spaces",
+      "slug": "architecture-spaces"
+    },
+    {
+      "folder": "Fine Art & Personal Work",
+      "slug": "fine-art"
+    }
+  ],
+  "photos": {
+    "BK7A0579.jpg": {
+      "id": "tl-01",
+      "title": "Blue Hour Marina",
+      "description": "Covered marina slips reflected in calm water at blue hour",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 1
+      }
+    },
+    "BK7A0588.jpg": {
+      "id": "tl-02",
+      "title": "Ferry at Dusk",
+      "description": "Washington State ferry beyond a waterfront pier at dusk",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 2
+      }
+    },
+    "BK7A0591.jpg": {
+      "id": "tl-03",
+      "title": "Harbor Afterglow",
+      "description": "Quiet marina channel framed by autumn leaves after sunset",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 3
+      }
+    },
+    "BK7A0600.jpg": {
+      "id": "tl-04",
+      "title": "Fish and Ferry",
+      "description": "Metal fish sculptures and a ferry silhouetted against a pink evening sky",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 4
+      }
+    },
+    "BK7A0602.jpg": {
+      "id": "tl-05",
+      "title": "Olympic Afterglow",
+      "description": "Fishing pier and Olympic Mountains beneath a vivid golden sunset",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 5
+      },
+      "featuredOrder": 1
+    },
+    "BK7A0605.jpg": {
+      "id": "tl-06",
+      "title": "Pier Into Evening",
+      "description": "Vertical view of a fishing pier extending over dark water at sunset",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 6
+      }
+    },
+    "BK7A0616.jpg": {
+      "id": "tl-07",
+      "title": "Watching the Horizon",
+      "description": "Visitors watch the Olympic Mountain skyline from a waterfront pier",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 7
+      }
+    },
+    "BK7A0621.jpg": {
+      "id": "tl-08",
+      "title": "Tethered",
+      "description": "A weathered buoy tied to a pier railing with mountains beyond",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 8
+      }
+    },
+    "BK7A0622.jpg": {
+      "id": "tl-09",
+      "title": "Safe Harbor",
+      "description": "Sailboats sheltered behind a rock breakwater in evening light",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 9
+      }
+    },
+    "BK7A0629.jpg": {
+      "id": "tl-10",
+      "title": "Night Fishing",
+      "description": "People fishing from a pier beneath an orange sunset",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 10
+      }
+    },
+    "BK7A0632.jpg": {
+      "id": "tl-11",
+      "title": "Casting at Last Light",
+      "description": "Anglers silhouetted against golden water and distant mountains",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 11
+      }
+    },
+    "BK7A0636.jpg": {
+      "id": "tl-12",
+      "title": "Last Light on the Sound",
+      "description": "Olympic Mountains silhouetted beyond glowing water after sunset",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 12
+      },
+      "hero": true
+    },
+    "BK7A0641.jpg": {
+      "id": "tl-13",
+      "title": "Waterfront Field Notes",
+      "description": "Marine wildlife display illuminated beside the darkening water",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 13
+      }
+    },
+    "BK7A0642.jpg": {
+      "id": "tl-14",
+      "title": "Shelter at Sundown",
+      "description": "Lit pier shelter against a deep blue and orange horizon",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 14
+      }
+    },
+    "BK7A0645.jpg": {
+      "id": "tl-15",
+      "title": "Marina Nocturne",
+      "description": "Boats and masts reflected inside a marina after sunset",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 15
+      }
+    },
+    "BK7A0647.jpg": {
+      "id": "tl-16",
+      "title": "Pier Lights",
+      "description": "Illuminated fishing pier and mountain silhouettes at twilight",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 16
+      }
+    },
+    "BK7A0650.jpg": {
+      "id": "tl-17",
+      "title": "Copper Reflections",
+      "description": "Warm harbor lights reflected among covered marina slips",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 17
+      }
+    },
+    "BK7A0688.jpg": {
+      "id": "tl-18",
+      "title": "City Between Water and Mountains",
+      "description": "Seattle stadiums and waterfront seen against the Olympic Mountains",
+      "location": "Seattle, Washington",
+      "orderByGallery": {
+        "travel-landscape": 18
+      }
+    },
+    "BK7A0716-Edit.jpg": {
+      "id": "tl-19",
+      "title": "Needle in the Afterglow",
+      "description": "Space Needle silhouetted against fiery clouds and Olympic peaks",
+      "location": "Seattle, Washington",
+      "orderByGallery": {
+        "travel-landscape": 19
+      },
+      "featuredOrder": 3
+    },
+    "BK7A0759-Edit.jpg": {
+      "id": "tl-20",
+      "title": "Covered for the Night",
+      "description": "Covered car parked along a quiet residential street at night",
+      "location": "Seattle, Washington",
+      "orderByGallery": {
+        "travel-landscape": 20
+      }
+    },
+    "BK7A1058.jpg": {
+      "id": "tl-21",
+      "title": "Moss Portal",
+      "description": "Moss-covered concrete passage hidden in autumn woodland",
+      "location": "Washington State",
+      "orderByGallery": {
+        "travel-landscape": 21
+      },
+      "featuredOrder": 4
+    },
+    "BK7A1059.jpg": {
+      "id": "tl-22",
+      "title": "Room in the Rock",
+      "description": "Bench inside a dark stone shelter opening toward the forest",
+      "location": "Washington State",
+      "orderByGallery": {
+        "travel-landscape": 22
+      }
+    },
+    "BK7A1068.jpg": {
+      "id": "tl-23",
+      "title": "Through to the Water",
+      "description": "Autumn pond seen through a small opening in a dark stone wall",
+      "location": "Washington State",
+      "orderByGallery": {
+        "travel-landscape": 23
+      }
+    },
+    "BK7A1084.jpg": {
+      "id": "tl-24",
+      "title": "Crossing the Sound",
+      "description": "Washington State ferry passing a rocky shoreline beneath layered clouds",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 24
+      }
+    },
+    "BK7A1086.jpg": {
+      "id": "tl-25",
+      "title": "Break in the Weather",
+      "description": "Sunbeams breaking through storm clouds over Puget Sound",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 25
+      }
+    },
+    "BK7A1088.jpg": {
+      "id": "tl-26",
+      "title": "Low Flight",
+      "description": "A gull flying low over textured gray-gold water",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 26
+      }
+    },
+    "BK7A1106.jpg": {
+      "id": "tl-27",
+      "title": "Waiting for the Ferry",
+      "description": "Solitary figure on a dock watching a ferry cross under storm clouds",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 27
+      }
+    },
+    "BK7A1109.jpg": {
+      "id": "tl-28",
+      "title": "Weather Over the Sound",
+      "description": "Birds and shafts of sunlight over a dark island shoreline",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 28
+      },
+      "featuredOrder": 2
+    },
+    "BK7A1127.jpg": {
+      "id": "tl-29",
+      "title": "Empty Bench, Open Water",
+      "description": "Empty waterfront bench facing Puget Sound beneath moving clouds",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 29
+      }
+    },
+    "BK7A1129.jpg": {
+      "id": "tl-30",
+      "title": "Making a Portrait",
+      "description": "Photographer making a waterfront portrait beneath dramatic clouds",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 30
+      }
+    },
+    "BK7A1133.jpg": {
+      "id": "tl-31",
+      "title": "Between Shores",
+      "description": "Ferry crossing open water beside an empty wooden pier",
+      "location": "Puget Sound, Washington",
+      "orderByGallery": {
+        "travel-landscape": 31
+      }
+    },
+    "BK7A1138.jpg": {
+      "id": "tl-32",
+      "title": "Mount Baker Rising",
+      "description": "Snow-covered Mount Baker rising above clouds and Puget Sound",
+      "location": "Washington State",
+      "orderByGallery": {
+        "travel-landscape": 32
+      }
+    },
+    "BK7A1142-Edit.jpg": {
+      "id": "tl-33",
+      "title": "Light Station, 1905",
+      "description": "Historic white lighthouse beneath deep blue storm clouds",
+      "location": "Mukilteo, Washington",
+      "orderByGallery": {
+        "travel-landscape": 33
+      }
+    },
+    "BK7A1177.jpg": {
+      "id": "tl-34",
+      "title": "Beacon by the Sound",
+      "description": "Historic lighthouse standing beside Puget Sound under broken clouds",
+      "location": "Mukilteo, Washington",
+      "orderByGallery": {
+        "travel-landscape": 34
+      }
+    },
+    "BK7A1180.jpg": {
+      "id": "tl-35",
+      "title": "Storm Behind the Light",
+      "description": "White lighthouse and keepers quarters beneath a gathering storm",
+      "location": "Mukilteo, Washington",
+      "orderByGallery": {
+        "travel-landscape": 35
+      }
+    },
+    "BK7A1188.jpg": {
+      "id": "tl-36",
+      "title": "Keeper of the Coast",
+      "description": "Historic lighthouse complex under dramatic blue clouds",
+      "location": "Mukilteo, Washington",
+      "orderByGallery": {
+        "travel-landscape": 36
+      }
+    },
+    "000000420006.jpg": {
+      "id": "at-001",
+      "title": "Coastal Passage",
+      "description": "Railway tracks following a quiet shoreline beneath an overcast sky",
+      "orderByGallery": {
+        "atmosphere": 1
+      }
+    },
+    "000000420009.jpg": {
+      "id": "at-002",
+      "title": "House Above the Trees",
+      "description": "A modern house emerging from a dark wooded hillside",
+      "orderByGallery": {
+        "atmosphere": 2
+      }
+    },
+    "000000420018.jpg": {
+      "id": "at-003",
+      "title": "After the Fall",
+      "description": "Fallen trunks and bare branches scattered across a forest floor",
+      "orderByGallery": {
+        "atmosphere": 3
+      }
+    },
+    "000000420021.jpg": {
+      "id": "at-004",
+      "title": "After the Tide",
+      "description": "A still animal form resting among stones near the water",
+      "orderByGallery": {
+        "atmosphere": 4
+      }
+    },
+    "000000420033.jpg": {
+      "id": "at-005",
+      "title": "Empty Assembly",
+      "description": "Rows of empty outdoor benches framed by heavy tree cover",
+      "orderByGallery": {
+        "atmosphere": 5
+      }
+    },
+    "Barns.jpg": {
+      "id": "at-006",
+      "title": "Weathered Geometry",
+      "description": "The steep wooden wall of an old barn wrapped in climbing vines",
+      "orderByGallery": {
+        "atmosphere": 6
+      }
+    },
+    "BK7A0834.jpg": {
+      "id": "at-007",
+      "title": "Light Through the Window",
+      "description": "Blue window light and projected shadows crossing a dark interior",
+      "orderByGallery": {
+        "atmosphere": 7
+      }
+    },
+    "cracks.jpg": {
+      "id": "at-008",
+      "title": "Service Corridor",
+      "description": "A stark underground corridor leading toward a pair of closed doors",
+      "orderByGallery": {
+        "atmosphere": 8
+      }
+    },
+    "door2.jpg": {
+      "id": "at-009",
+      "title": "No Exit",
+      "description": "Closed elevator doors isolated at the end of a dim concrete hall",
+      "orderByGallery": {
+        "atmosphere": 9
+      }
+    },
+    "doors.jpg": {
+      "id": "at-010",
+      "title": "Double Doors",
+      "description": "A pair of plain doors illuminated beneath fluorescent ceiling lights",
+      "orderByGallery": {
+        "atmosphere": 10
+      }
+    },
+    "elevator.jpg": {
+      "id": "at-011",
+      "title": "Waiting Floor",
+      "description": "An elevator entrance receding into a narrow pool of shadow",
+      "orderByGallery": {
+        "atmosphere": 11
+      }
+    },
+    "fog.jpg": {
+      "id": "at-012",
+      "title": "Into the Fog",
+      "description": "An empty residential road disappearing beneath trees and dense fog",
+      "orderByGallery": {
+        "atmosphere": 12
+      }
+    },
+    "fog2.jpg": {
+      "id": "at-013",
+      "title": "Neighborhood Haze",
+      "description": "Houses and parked cars softened by pale morning mist",
+      "orderByGallery": {
+        "atmosphere": 13
+      }
+    },
+    "fog3.jpg": {
+      "id": "at-014",
+      "title": "Following Through Fog",
+      "description": "A car moving along a wet road beneath fog and overhead wires",
+      "orderByGallery": {
+        "atmosphere": 14
+      }
+    },
+    "fog4.jpg": {
+      "id": "at-015",
+      "title": "House in Haze",
+      "description": "A low modern house separated from the street by fog and winter brush",
+      "orderByGallery": {
+        "atmosphere": 15
+      }
+    },
+    "fog5.jpg": {
+      "id": "at-016",
+      "title": "Signal in the Mist",
+      "description": "A dark intersection and traffic light fading into heavy fog",
+      "orderByGallery": {
+        "atmosphere": 16
+      }
+    },
+    "fog6.jpg": {
+      "id": "at-017",
+      "title": "Platforms in Fog",
+      "description": "Rail lines and station platforms disappearing into dense morning fog",
+      "orderByGallery": {
+        "atmosphere": 17
+      }
+    },
+    "Hall.jpg": {
+      "id": "at-018",
+      "title": "Green Hall",
+      "description": "A narrow institutional hallway washed in muted green light",
+      "orderByGallery": {
+        "atmosphere": 18
+      }
+    },
+    "IMG_0004.jpg": {
+      "id": "at-019",
+      "title": "Late Light, Blue House",
+      "description": "A small blue house catching a narrow patch of late afternoon sun",
+      "orderByGallery": {
+        "atmosphere": 19
+      }
+    },
+    "IMG_0031.jpg": {
+      "id": "at-020",
+      "title": "Rain Through Glass",
+      "description": "Street lights and passing storefronts dissolving through a rain-streaked window",
+      "orderByGallery": {
+        "atmosphere": 20
+      }
+    },
+    "IMG_0257-Edit.jpg": {
+      "id": "at-021",
+      "title": "Figures at the Water",
+      "description": "Small figures gathered along a bright shoreline seen from above",
+      "orderByGallery": {
+        "atmosphere": 21
+      }
+    },
+    "IMG_0308-Edit.jpg": {
+      "id": "at-022",
+      "title": "Edge of the Sound",
+      "description": "A solitary figure standing beside a railing over glittering water",
+      "orderByGallery": {
+        "atmosphere": 22
+      }
+    },
+    "IMG_0441-Edit.jpg": {
+      "id": "at-023",
+      "title": "Inversion",
+      "description": "A hanging streetlight reflected upside down through wet glass",
+      "orderByGallery": {
+        "atmosphere": 23
+      }
+    },
+    "IMG_0494.jpg": {
+      "id": "at-024",
+      "title": "Blue Repetition",
+      "description": "Rows of narrow windows glowing blue and green across a dark facade",
+      "orderByGallery": {
+        "atmosphere": 24
+      }
+    },
+    "IMG_0866.jpg": {
+      "id": "at-025",
+      "title": "Freight Along the Shore",
+      "description": "A freight train curving beside a rocky shoreline and wooded slope",
+      "orderByGallery": {
+        "atmosphere": 25
+      }
+    },
+    "IMG_0927.jpg": {
+      "id": "at-026",
+      "title": "Under Red Light",
+      "description": "People gathered beneath warm red light inside a nighttime arcade",
+      "orderByGallery": {
+        "atmosphere": 26
+      }
+    },
+    "IMG_0958.jpg": {
+      "id": "at-027",
+      "title": "After Recess",
+      "description": "An empty playground structure standing in cool evening light",
+      "orderByGallery": {
+        "atmosphere": 27
+      }
+    },
+    "IMG_0960.jpg": {
+      "id": "at-028",
+      "title": "Park Shelter",
+      "description": "A small concrete shelter centered in an empty public park",
+      "orderByGallery": {
+        "atmosphere": 28
+      }
+    },
+    "IMG_0961.jpg": {
+      "id": "at-029",
+      "title": "Off Season",
+      "description": "Weathered picnic tables scattered along a quiet park road",
+      "orderByGallery": {
+        "atmosphere": 29
+      }
+    },
+    "IMG_0962-Edit.jpg": {
+      "id": "at-030",
+      "title": "Empty Rows",
+      "description": "Rows of vacant picnic tables beneath a dark shelter roof",
+      "orderByGallery": {
+        "atmosphere": 30
+      }
+    },
+    "IMG_0970.jpg": {
+      "id": "at-031",
+      "title": "Framed Autumn",
+      "description": "Autumn trees seen through the concrete opening of a park structure",
+      "orderByGallery": {
+        "atmosphere": 31
+      }
+    },
+    "IMG_0978.jpg": {
+      "id": "at-032",
+      "title": "Through the Pipe",
+      "description": "A circular concrete passage framing pale daylight at its far end",
+      "orderByGallery": {
+        "atmosphere": 32
+      }
+    },
+    "IMG_0980.jpg": {
+      "id": "at-033",
+      "title": "Broken Passage",
+      "description": "A damaged wooden walkway crossing rough ground and debris",
+      "orderByGallery": {
+        "atmosphere": 33
+      }
+    },
+    "IMG_0981.jpg": {
+      "id": "at-034",
+      "title": "Among the Cedars",
+      "description": "A quiet picnic area tucked beneath tall cedar trees",
+      "orderByGallery": {
+        "atmosphere": 34
+      }
+    },
+    "IMG_1064.jpg": {
+      "id": "at-035",
+      "title": "Storm Break",
+      "description": "Sunlight breaking through storm clouds over dark open water",
+      "orderByGallery": {
+        "atmosphere": 35
+      }
+    },
+    "IMG_1095.jpg": {
+      "id": "at-036",
+      "title": "Open Water Study",
+      "description": "A narrow study of gray waves moving toward shore",
+      "orderByGallery": {
+        "atmosphere": 36
+      }
+    },
+    "IMG_1107.jpg": {
+      "id": "at-037",
+      "title": "Around the Bend",
+      "description": "Parallel railway tracks curving through a wooded cut",
+      "orderByGallery": {
+        "atmosphere": 37
+      }
+    },
+    "IMG_1172.jpg": {
+      "id": "at-038",
+      "title": "Signal in the Mist II",
+      "description": "A traffic signal suspended above a road disappearing into fog",
+      "orderByGallery": {
+        "atmosphere": 38
+      }
+    },
+    "IMG_1277_2.jpg": {
+      "id": "at-039",
+      "title": "Underpass Rhythm",
+      "description": "Repeating columns and amber lights receding through a city underpass",
+      "orderByGallery": {
+        "atmosphere": 39
+      }
+    },
+    "IMG_1513.jpg": {
+      "id": "at-040",
+      "title": "Moon Study",
+      "description": "A full moon emerging between layers of dark cloud",
+      "orderByGallery": {
+        "atmosphere": 40
+      }
+    },
+    "IMG_1945.jpg": {
+      "id": "at-041",
+      "title": "Lights Against Blue",
+      "description": "A row of stadium lights angled across a clear blue sky",
+      "orderByGallery": {
+        "atmosphere": 41
+      }
+    },
+    "IMG_2074.jpg": {
+      "id": "at-042",
+      "title": "One Light On",
+      "description": "A single warm window glowing in a house screened by trees",
+      "orderByGallery": {
+        "atmosphere": 42
+      }
+    },
+    "IMG_2254.jpg": {
+      "id": "at-043",
+      "title": "Lines at Dusk",
+      "description": "Contrails crossing a pale evening sky above a distant horizon",
+      "orderByGallery": {
+        "atmosphere": 43
+      }
+    },
+    "IMG_2288.jpg": {
+      "id": "at-044",
+      "title": "Between Towers",
+      "description": "A narrow downtown tower held between taller sunlit buildings",
+      "orderByGallery": {
+        "atmosphere": 44
+      }
+    },
+    "IMG_2294.jpg": {
+      "id": "at-045",
+      "title": "Silver Curve",
+      "description": "Blue windows repeating around the curve of a modern facade",
+      "orderByGallery": {
+        "atmosphere": 45
+      }
+    },
+    "IMG_2295.jpg": {
+      "id": "at-046",
+      "title": "Stone and Glass",
+      "description": "Warm stone architecture layered with dark reflective windows",
+      "orderByGallery": {
+        "atmosphere": 46
+      }
+    },
+    "IMG_2331.jpg": {
+      "id": "at-047",
+      "title": "Cranes in Profile",
+      "description": "Construction cranes intersecting against a pale evening sky",
+      "orderByGallery": {
+        "atmosphere": 47
+      }
+    },
+    "IMG_2342.jpg": {
+      "id": "at-048",
+      "title": "Roofline",
+      "description": "A steep roof reduced to a dark silhouette against blue and gold light",
+      "orderByGallery": {
+        "atmosphere": 48
+      }
+    },
+    "IMG_2345.jpg": {
+      "id": "at-049",
+      "title": "Last Windows",
+      "description": "A building edge reflecting the final color of sunset",
+      "orderByGallery": {
+        "atmosphere": 49
+      }
+    },
+    "IMG_2371.jpg": {
+      "id": "at-050",
+      "title": "After the Gathering",
+      "description": "Empty folding chairs left in a dark patch of grass",
+      "orderByGallery": {
+        "atmosphere": 50
+      }
+    },
+    "IMG_2404.jpg": {
+      "id": "at-051",
+      "title": "Quiet Equipment",
+      "description": "A pair of headphones resting in soft black-and-white light",
+      "orderByGallery": {
+        "atmosphere": 51
+      }
+    },
+    "IMG_2413.jpg": {
+      "id": "at-052",
+      "title": "Six Strings",
+      "description": "A close view looking along the strings and frets of a guitar",
+      "orderByGallery": {
+        "atmosphere": 52
+      }
+    },
+    "IMG_2443-3.jpg": {
+      "id": "at-053",
+      "title": "White Study",
+      "description": "Pale flowers rendered in high-key monochrome",
+      "orderByGallery": {
+        "atmosphere": 53
+      }
+    },
+    "IMG_2468.jpg": {
+      "id": "at-054",
+      "title": "Loading Dock Light",
+      "description": "A single security lamp illuminating a service door after dark",
+      "orderByGallery": {
+        "atmosphere": 54
+      }
+    },
+    "IMG_2677.jpg": {
+      "id": "at-055",
+      "title": "Black Roof, Blue Sky",
+      "description": "A triangular roofline cutting into a textured blue sky",
+      "orderByGallery": {
+        "atmosphere": 55
+      }
+    },
+    "IMG_3416.jpg": {
+      "id": "at-056",
+      "title": "Weather Above the Roof",
+      "description": "Electric blue storm clouds gathering over a silhouetted rooftop",
+      "orderByGallery": {
+        "atmosphere": 56
+      }
+    },
+    "IMG_3473.jpg": {
+      "id": "at-057",
+      "title": "Mountain Beyond the Trees",
+      "description": "A snow-covered mountain rising beyond a dark evergreen ridge",
+      "orderByGallery": {
+        "atmosphere": 57
+      }
+    },
+    "IMG_3478.jpg": {
+      "id": "at-058",
+      "title": "Winter Flight",
+      "description": "A bird gliding across a pale winter sky",
+      "orderByGallery": {
+        "atmosphere": 58
+      }
+    },
+    "IMG_3502.jpg": {
+      "id": "at-059",
+      "title": "Distant Snow",
+      "description": "Layered forest and bare trees opening toward snowy mountains",
+      "orderByGallery": {
+        "atmosphere": 59
+      }
+    },
+    "IMG_3505.jpg": {
+      "id": "at-060",
+      "title": "Between the Trunks",
+      "description": "A distant valley seen through a stand of slender bare trees",
+      "orderByGallery": {
+        "atmosphere": 60
+      }
+    },
+    "IMG_3580.jpg": {
+      "id": "at-061",
+      "title": "Canopy Lines",
+      "description": "Tall trunks and branches converging toward a bright blue sky",
+      "orderByGallery": {
+        "atmosphere": 61
+      }
+    },
+    "IMG_3593.jpg": {
+      "id": "at-062",
+      "title": "Windfall",
+      "description": "A forested slope tilted beneath moving white clouds",
+      "orderByGallery": {
+        "atmosphere": 62
+      }
+    },
+    "IMG_3594.jpg": {
+      "id": "at-063",
+      "title": "Bare Crown",
+      "description": "A leafless tree reaching vertically into a muted sky",
+      "orderByGallery": {
+        "atmosphere": 63
+      }
+    },
+    "IMG_3616-2.jpg": {
+      "id": "at-064",
+      "title": "Three in Blue",
+      "description": "Three paragliders floating across bright blue cloud",
+      "orderByGallery": {
+        "atmosphere": 64
+      }
+    },
+    "IMG_3639.jpg": {
+      "id": "at-065",
+      "title": "Through the Tunnel",
+      "description": "Cars following a curve through an orange-lit tunnel",
+      "orderByGallery": {
+        "atmosphere": 65
+      }
+    },
+    "IMG_3667.jpg": {
+      "id": "at-066",
+      "title": "Sentient",
+      "description": "A geometric metal vent rising against open sky",
+      "orderByGallery": {
+        "atmosphere": 66
+      }
+    },
+    "IMG_3670.jpg": {
+      "id": "at-067",
+      "title": "Back of House",
+      "description": "Dumpsters and service doors arranged behind a brick building",
+      "orderByGallery": {
+        "atmosphere": 67
+      }
+    },
+    "IMG_3679.jpg": {
+      "id": "at-068",
+      "title": "Roadside Pause",
+      "description": "A white van parked beside a small roadside sign",
+      "orderByGallery": {
+        "atmosphere": 68
+      }
+    },
+    "IMG_3680.jpg": {
+      "id": "at-069",
+      "title": "Green Exit",
+      "description": "A bright green public booth standing alone beside the road",
+      "orderByGallery": {
+        "atmosphere": 69
+      }
+    },
+    "IMG_3686.jpg": {
+      "id": "at-070",
+      "title": "Layers of Time",
+      "description": "Rust, paint, and weathered metal forming a dense abstract surface",
+      "orderByGallery": {
+        "atmosphere": 70
+      }
+    },
+    "IMG_3689.jpg": {
+      "id": "at-071",
+      "title": "Side Entrance",
+      "description": "A dark open doorway interrupting a pale concrete wall",
+      "orderByGallery": {
+        "atmosphere": 71
+      }
+    },
+    "IMG_3690.jpg": {
+      "id": "at-072",
+      "title": "Utility House",
+      "description": "A low weathered outbuilding set against dark trees",
+      "orderByGallery": {
+        "atmosphere": 72
+      }
+    },
+    "IMG_3691.jpg": {
+      "id": "at-073",
+      "title": "Red Door",
+      "description": "A vivid red garage door framed by pale walls and greenery",
+      "orderByGallery": {
+        "atmosphere": 73
+      }
+    },
+    "IMG_3808.jpg": {
+      "id": "at-074",
+      "title": "End of Shift",
+      "description": "An excavator arm silhouetted against the last light of day",
+      "orderByGallery": {
+        "atmosphere": 74
+      }
+    },
+    "IMG_3842.jpg": {
+      "id": "at-075",
+      "title": "Blue Apertures",
+      "description": "Narrow blue windows punctuating a dark geometric wall",
+      "orderByGallery": {
+        "atmosphere": 75
+      }
+    },
+    "IMG_3852.jpg": {
+      "id": "at-076",
+      "title": "Exit Light",
+      "description": "A solitary wall fixture held between hard sunlight and blue shadow",
+      "orderByGallery": {
+        "atmosphere": 76
+      }
+    },
+    "IMG_3855.jpg": {
+      "id": "at-077",
+      "title": "Restricted",
+      "description": "A red-and-white barrier arm crossing a shadowed garage entrance",
+      "orderByGallery": {
+        "atmosphere": 77
+      }
+    },
+    "IMG_3864.jpg": {
+      "id": "at-078",
+      "title": "Red Figure",
+      "description": "A bright red street fixture framed by windows and the Post Alley sign",
+      "orderByGallery": {
+        "atmosphere": 78
+      }
+    },
+    "IMG_3867.jpg": {
+      "id": "at-079",
+      "title": "Suspended",
+      "description": "A short hanging chain isolated against pale sky and distant hills",
+      "orderByGallery": {
+        "atmosphere": 79
+      }
+    },
+    "IMG_3877.jpg": {
+      "id": "at-080",
+      "title": "Hanging Gardens",
+      "description": "Planters and trailing greenery attached to an ornate brick facade",
+      "orderByGallery": {
+        "atmosphere": 80
+      }
+    },
+    "IMG_3892.jpg": {
+      "id": "at-081",
+      "title": "Red Coat",
+      "description": "A figure in a red coat standing alone on a concrete balcony",
+      "orderByGallery": {
+        "atmosphere": 81
+      }
+    },
+    "IMG_3940-2.jpg": {
+      "id": "at-082",
+      "title": "Twin Signals",
+      "description": "Two yellow vertical banners punctuating a pale apartment facade",
+      "orderByGallery": {
+        "atmosphere": 82
+      }
+    },
+    "IMG_3960.jpg": {
+      "id": "at-083",
+      "title": "Three Lamps",
+      "description": "Warm wall lamps breaking the cool geometry of an industrial facade",
+      "orderByGallery": {
+        "atmosphere": 83
+      }
+    },
+    "IMG_3961.jpg": {
+      "id": "at-084",
+      "title": "One Lamp",
+      "description": "A single curved wall light casting amber color onto blue brick",
+      "orderByGallery": {
+        "atmosphere": 84
+      }
+    },
+    "IMG_3973.jpg": {
+      "id": "at-085",
+      "title": "Rain Pattern",
+      "description": "Water droplets scattering reflected light across a dark pane of glass",
+      "orderByGallery": {
+        "atmosphere": 85
+      }
+    },
+    "IMG_3983.jpg": {
+      "id": "at-086",
+      "title": "Water on Stone",
+      "description": "Rainwater and reflected pavement flowing across a dark car hood",
+      "orderByGallery": {
+        "atmosphere": 86
+      }
+    },
+    "IMG_3985.jpg": {
+      "id": "at-087",
+      "title": "Rain-Slick Machine",
+      "description": "A black car beaded with rain beneath reflected street markings",
+      "orderByGallery": {
+        "atmosphere": 87
+      }
+    },
+    "IMG_4005.jpg": {
+      "id": "at-088",
+      "title": "Red Against Gray",
+      "description": "A red-leafed tree entering the edge of a pale concrete scene",
+      "orderByGallery": {
+        "atmosphere": 88
+      }
+    },
+    "IMG_4011.jpg": {
+      "id": "at-089",
+      "title": "Autumn Window",
+      "description": "Brilliant red foliage filling a balcony opening beside a window",
+      "orderByGallery": {
+        "atmosphere": 89
+      }
+    },
+    "IMG_4015.jpg": {
+      "id": "at-090",
+      "title": "Windows in Decay",
+      "description": "A narrow weathered facade marked by repeating dark windows",
+      "orderByGallery": {
+        "atmosphere": 90
+      }
+    },
+    "IMG_4023.jpg": {
+      "id": "at-091",
+      "title": "Under Post Alley",
+      "description": "Two people walking beneath the illuminated Post Alley sign",
+      "location": "Seattle, Washington",
+      "orderByGallery": {
+        "atmosphere": 91
+      }
+    },
+    "IMG_7952-Edit.jpg": {
+      "id": "at-092",
+      "title": "Offshore Remains",
+      "description": "A weathered group of pilings standing alone in calm blue water",
+      "orderByGallery": {
+        "atmosphere": 92
+      }
+    },
+    "IMG_8058-Edit.jpg": {
+      "id": "at-093",
+      "title": "Intervals of Light",
+      "description": "Repeating concrete openings cut by warm sunlight and long shadows",
+      "orderByGallery": {
+        "atmosphere": 93
+      }
+    },
+    "IMG_8787.jpg": {
+      "id": "at-094",
+      "title": "Narrow Facade",
+      "description": "A slim monochrome slice of ornate historic architecture",
+      "orderByGallery": {
+        "atmosphere": 94
+      }
+    },
+    "IMG_8802.jpg": {
+      "id": "at-095",
+      "title": "Pink Panel",
+      "description": "Angular city facades framed beneath a vivid blue and white sky",
+      "orderByGallery": {
+        "atmosphere": 95
+      }
+    },
+    "IMG_8803.jpg": {
+      "id": "at-096",
+      "title": "Courtyard Flight",
+      "description": "Birds crossing a dramatic sky enclosed by dark buildings",
+      "orderByGallery": {
+        "atmosphere": 96
+      }
+    },
+    "IMG_8819.jpg": {
+      "id": "at-097",
+      "title": "Wheel Against Sky",
+      "description": "A Ferris wheel rising into soft blue cloud",
+      "orderByGallery": {
+        "atmosphere": 97
+      }
+    },
+    "IMG_8838.jpg": {
+      "id": "at-098",
+      "title": "Last Train Home",
+      "description": "Passengers gathered shoulder to shoulder inside a crowded rail car",
+      "orderByGallery": {
+        "atmosphere": 98
+      }
+    },
+    "IMG_8935.jpg": {
+      "id": "at-099",
+      "title": "Passing Frame",
+      "description": "Road and buildings divided into panels by dark window frames",
+      "orderByGallery": {
+        "atmosphere": 99
+      }
+    },
+    "IMG_8945.jpg": {
+      "id": "at-100",
+      "title": "Concrete Shadows",
+      "description": "Long architectural shadows stretching beneath concrete columns",
+      "orderByGallery": {
+        "atmosphere": 100
+      }
+    },
+    "IMG_9244.jpg": {
+      "id": "at-101",
+      "title": "Night Transit",
+      "description": "A distant vehicle glowing through a dark wet roadway",
+      "orderByGallery": {
+        "atmosphere": 101
+      }
+    },
+    "IMG_9484.jpg": {
+      "id": "at-102",
+      "title": "Train at Dusk",
+      "description": "A commuter train moving through a blue-gray evening",
+      "orderByGallery": {
+        "atmosphere": 102
+      }
+    },
+    "IMG_9485.jpg": {
+      "id": "at-103",
+      "title": "Shoulder Stop",
+      "description": "A roadside encounter seen through rain-softened glass",
+      "orderByGallery": {
+        "atmosphere": 103
+      }
+    },
+    "IMG_9587.jpg": {
+      "id": "at-104",
+      "title": "Covered Machine",
+      "description": "A motorcycle wrapped in weather covers after the rain",
+      "orderByGallery": {
+        "atmosphere": 104
+      }
+    },
+    "IMG_9735-Edit-Edit.jpg": {
+      "id": "at-105",
+      "title": "Cloudline",
+      "description": "A mountain range rising above a low horizontal band of cloud",
+      "orderByGallery": {
+        "atmosphere": 105
+      }
+    },
+    "IMG_8217-Edit.jpg": {
+      "id": "jp-01",
+      "title": "Crossing From Above",
+      "description": "Looking down on a wide intersection with red bike lanes and glass towers under a cloudy sky",
+      "location": "Tokyo, Japan",
+      "orderByGallery": {
+        "japan": 2
+      }
+    },
+    "IMG_8262-Edit.jpg": {
+      "id": "jp-02",
+      "title": "Umbrellas at the Shrine",
+      "description": "Visitors with umbrellas gathered in the rain before a red shrine hall hung with lanterns",
+      "location": "Tokyo, Japan",
+      "orderByGallery": {
+        "japan": 3
+      }
+    },
+    "IMG_8296-Edit.jpg": {
+      "id": "jp-03",
+      "title": "Waiting to Cross",
+      "description": "Shoppers waiting at a crosswalk beneath the Bic Camera sign",
+      "location": "Akihabara, Tokyo",
+      "orderByGallery": {
+        "japan": 4
+      }
+    },
+    "IMG_8306-Edit.jpg": {
+      "id": "jp-04",
+      "title": "Yellow Line",
+      "description": "Pedestrians with umbrellas on a rain-soaked sidewalk beside a line of yellow tactile paving",
+      "location": "Tokyo, Japan",
+      "orderByGallery": {
+        "japan": 5
+      }
+    },
+    "IMG_8337-Edit.jpg": {
+      "id": "jp-05",
+      "title": "Akihabara in the Rain",
+      "description": "A figure with an umbrella facing the neon signs of Akihabara on a wet night",
+      "location": "Akihabara, Tokyo",
+      "orderByGallery": {
+        "japan": 1
+      },
+      "additionalGalleries": [
+        {
+          "slug": "atmosphere",
+          "order": 106
+        }
+      ],
+      "featuredOrder": 5
+    },
+    "IMG_8351-Edit.jpg": {
+      "id": "jp-06",
+      "title": "Skytree in Cloud",
+      "description": "Tokyo Skytree disappearing into low cloud above a rainy street",
+      "location": "Asakusa, Tokyo",
+      "orderByGallery": {
+        "japan": 6
+      }
+    },
+    "IMG_8355-Edit.jpg": {
+      "id": "jp-07",
+      "title": "Beneath the Lantern",
+      "description": "The great red lantern of Kaminarimon framing an empty Nakamise shopping street",
+      "location": "Asakusa, Tokyo",
+      "orderByGallery": {
+        "japan": 7
+      }
+    },
+    "IMG_8360-Edit.jpg": {
+      "id": "jp-08",
+      "title": "Before Opening",
+      "description": "Shuttered stalls lining a quiet Nakamise-dori on an overcast day",
+      "location": "Asakusa, Tokyo",
+      "orderByGallery": {
+        "japan": 8
+      }
+    },
+    "IMG_8405-Edit.jpg": {
+      "id": "jp-09",
+      "title": "Seated in Prayer",
+      "description": "A bronze Buddhist statue with hands pressed together, Tokyo Skytree faint in the mist behind",
+      "location": "Asakusa, Tokyo",
+      "orderByGallery": {
+        "japan": 9
+      }
+    },
+    "IMG_8553-Edit.jpg": {
+      "id": "jp-10",
+      "title": "Platform 18",
+      "description": "A Shinkansen bullet train waiting at the platform",
+      "location": "Tokyo Station, Tokyo",
+      "orderByGallery": {
+        "japan": 10
+      }
+    },
+    "IMG_8665-Edit.jpg": {
+      "id": "jp-11",
+      "title": "Temple Guardian",
+      "description": "A carved dragon statue standing before the red halls of Kiyomizu-dera",
+      "location": "Kiyomizu-dera, Kyoto",
+      "orderByGallery": {
+        "japan": 11
+      }
+    },
+    "IMG_8688-Edit.jpg": {
+      "id": "jp-12",
+      "title": "Wishes and Pagoda",
+      "description": "Wooden ema prayer plaques hanging before the orange three-story pagoda",
+      "location": "Kiyomizu-dera, Kyoto",
+      "orderByGallery": {
+        "japan": 12
+      }
+    },
+    "IMG_8707-Edit.jpg": {
+      "id": "jp-13",
+      "title": "Pagoda in the Trees",
+      "description": "A small red pagoda half hidden in a forested hillside",
+      "location": "Kiyomizu-dera, Kyoto",
+      "orderByGallery": {
+        "japan": 13
+      }
+    },
+    "IMG_8755-Edit.jpg": {
+      "id": "jp-14",
+      "title": "Quiet Among Crowds",
+      "description": "A bronze statue with hands in prayer on a temple veranda as students pass behind",
+      "location": "Kiyomizu-dera, Kyoto",
+      "orderByGallery": {
+        "japan": 14
+      }
+    },
+    "IMG_8826-Edit.jpg": {
+      "id": "jp-15",
+      "title": "Downhill",
+      "description": "Crowds filling a sloping street of traditional shops with the city and mountains beyond",
+      "location": "Higashiyama, Kyoto",
+      "orderByGallery": {
+        "japan": 15
+      }
+    },
+    "IMG_8881-Edit.jpg": {
+      "id": "jp-16",
+      "title": "Covered Load",
+      "description": "A small truck with a green tarp parked in a shuttered shopping arcade",
+      "location": "Kyoto, Japan",
+      "orderByGallery": {
+        "japan": 16
+      }
+    },
+    "IMG_8885-Edit.jpg": {
+      "id": "jp-17",
+      "title": "Side Street",
+      "description": "A woman walking down a narrow tiled alley strung with overhead wires",
+      "location": "Kyoto, Japan",
+      "orderByGallery": {
+        "japan": 17
+      }
+    },
+    "IMG_8895-Edit.jpg": {
+      "id": "jp-18",
+      "title": "Break",
+      "description": "A chef in white checking his phone against a shuttered storefront",
+      "location": "Kyoto, Japan",
+      "orderByGallery": {
+        "japan": 18
+      }
+    },
+    "IMG_8986-Edit.jpg": {
+      "id": "jp-19",
+      "title": "Rain on the Eaves",
+      "description": "Ornate temple roof tiles curling against a stormy sky",
+      "location": "Kyoto, Japan",
+      "orderByGallery": {
+        "japan": 19
+      }
+    },
+    "IMG_8992-Edit.jpg": {
+      "id": "jp-20",
+      "title": "Corner Tower",
+      "description": "A white castle turret beneath heavy clouds beyond a gravel courtyard",
+      "location": "Nijō Castle, Kyoto",
+      "orderByGallery": {
+        "japan": 20
+      }
+    },
+    "IMG_9041-Edit.jpg": {
+      "id": "jp-21",
+      "title": "Down the Alley",
+      "description": "A dark, narrow alley lit by a few glowing signs and a vending machine",
+      "location": "Japan",
+      "orderByGallery": {
+        "japan": 21
+      },
+      "additionalGalleries": [
+        {
+          "slug": "atmosphere",
+          "order": 107
+        }
+      ]
+    },
+    "IMG_9093-Edit.jpg": {
+      "id": "jp-22",
+      "title": "Castle on the Hill",
+      "description": "A castle rising above a dense wooded hillside under a warm, hazy sky",
+      "location": "Japan",
+      "orderByGallery": {
+        "japan": 22
+      }
+    },
+    "IMG_9191-Edit.jpg": {
+      "id": "jp-23",
+      "title": "Night Watch",
+      "description": "A cat sitting outside a softly lit apartment lobby at night",
+      "location": "Japan",
+      "orderByGallery": {
+        "japan": 23
+      },
+      "additionalGalleries": [
+        {
+          "slug": "atmosphere",
+          "order": 108
+        }
+      ]
+    },
+    "IMG_9196-Edit.jpg": {
+      "id": "jp-24",
+      "title": "Stairwells",
+      "description": "Curved apartment stairwells glowing white on a rainy night beside a yellow car",
+      "location": "Atami, Japan",
+      "orderByGallery": {
+        "japan": 24
+      },
+      "additionalGalleries": [
+        {
+          "slug": "atmosphere",
+          "order": 109
+        }
+      ]
+    },
+    "mePhoto.jpg": {
+      "id": "pm-01",
+      "title": "Photographer Portrait",
+      "description": "Portrait of the photographer behind JJM Photography",
+      "location": "Washington State",
+      "orderByGallery": {
+        "people-moments": 2
+      },
+      "portrait": true
+    },
+    "IMG_8852-Edit.jpg": {
+      "id": "pm-02",
+      "title": "Shared Laugh",
+      "description": "Two men laughing together in a dimly lit hallway",
+      "location": "Kyoto, Japan",
+      "orderByGallery": {
+        "people-moments": 1
+      }
+    }
+  }
+}
