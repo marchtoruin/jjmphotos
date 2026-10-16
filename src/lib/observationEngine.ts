@@ -23,6 +23,13 @@ export interface EnginePreferences {
 }
 
 export const ENGINE_PREFS_KEY = 'jjm-observation-preferences'
+export const ENGINE_ASSIGNMENT_KEY = 'jjm-observation-assignment'
+
+interface StoredAssignment {
+  challengeId: string
+  lensId: string | null
+  constraintId: string | null
+}
 
 const defaultPreferences: EnginePreferences = {
   includeLens: true,
@@ -180,6 +187,43 @@ export function readPreferences(): EnginePreferences {
 export function writePreferences(preferences: EnginePreferences) {
   try {
     localStorage.setItem(ENGINE_PREFS_KEY, JSON.stringify(preferences))
+  } catch {
+    // Private browsing or blocked storage should not break the generator.
+  }
+}
+
+function storedId(value: unknown) {
+  return typeof value === 'string' && value.length > 0 ? value : null
+}
+
+export function readStoredAssignment(): Assignment | null {
+  try {
+    const raw = localStorage.getItem(ENGINE_ASSIGNMENT_KEY)
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as Partial<StoredAssignment> | null
+    if (!parsed || typeof parsed !== 'object') return null
+
+    const challenge = getChallengeById(storedId(parsed.challengeId))
+    if (!challenge) return null
+
+    return {
+      challenge,
+      lens: getLensById(storedId(parsed.lensId)),
+      constraint: getConstraintById(storedId(parsed.constraintId)),
+    }
+  } catch {
+    return null
+  }
+}
+
+export function writeStoredAssignment(assignment: Assignment) {
+  try {
+    const stored: StoredAssignment = {
+      challengeId: assignment.challenge.id,
+      lensId: assignment.lens?.id ?? null,
+      constraintId: assignment.constraint?.id ?? null,
+    }
+    localStorage.setItem(ENGINE_ASSIGNMENT_KEY, JSON.stringify(stored))
   } catch {
     // Private browsing or blocked storage should not break the generator.
   }

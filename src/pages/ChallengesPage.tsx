@@ -12,10 +12,12 @@ import {
   formatAssignmentText,
   parseAssignmentFromSearch,
   readPreferences,
+  readStoredAssignment,
   shareAssignment,
   withRegeneratedConstraint,
   withRegeneratedLens,
   writePreferences,
+  writeStoredAssignment,
   type Assignment,
   type EnginePreferences,
 } from '../lib/observationEngine'
@@ -30,13 +32,27 @@ export function ChallengesPage() {
   const [pulse, setPulse] = useState(0)
 
   const requestedId = searchParams.get('id')
-  const assignment = useMemo(() => parseAssignmentFromSearch(searchParams), [searchParams])
-  const unknownAssignment = Boolean(requestedId) && !assignment
+  const fromUrl = useMemo(() => parseAssignmentFromSearch(searchParams), [searchParams])
+  const storedAssignment = useMemo(
+    () => (requestedId ? null : readStoredAssignment()),
+    [requestedId],
+  )
+  const assignment = requestedId ? fromUrl : storedAssignment
+  const unknownAssignment = Boolean(requestedId) && !fromUrl
   const status = assignment ? 'IN THE FIELD' : 'AWAITING OBSERVATION'
 
   useEffect(() => {
     writePreferences(preferences)
   }, [preferences])
+
+  useEffect(() => {
+    if (assignment) writeStoredAssignment(assignment)
+  }, [assignment])
+
+  useEffect(() => {
+    if (requestedId || !storedAssignment) return
+    setSearchParams(assignmentSearchParams(storedAssignment), { replace: true })
+  }, [requestedId, setSearchParams, storedAssignment])
 
   useEffect(() => {
     if (!notice) return
