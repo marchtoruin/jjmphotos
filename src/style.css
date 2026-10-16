@@ -252,6 +252,88 @@ a:focus-visible {
   top: 1rem;
 }
 
+.observation-trigger {
+  position: fixed;
+  right: max(0.7rem, env(safe-area-inset-right));
+  bottom: max(0.7rem, env(safe-area-inset-bottom));
+  z-index: 20;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  color: #e6dfd2;
+  opacity: 0.34;
+  transition: opacity 450ms ease, filter 450ms ease, transform 450ms ease;
+}
+
+.observation-trigger:hover,
+.observation-trigger:focus-visible {
+  opacity: 0.86;
+  filter: drop-shadow(0 0 10px rgb(230 223 210 / 32%));
+  transform: translateY(-1px);
+}
+
+.engine-page {
+  min-height: calc(100svh - 8.5rem);
+}
+
+.engine-panel {
+  border: 1px solid rgb(230 223 210 / 12%);
+  padding: 1.25rem 1.15rem 1rem;
+  background: rgb(12 11 10 / 42%);
+}
+
+.engine-generate {
+  display: grid;
+  width: 100%;
+  min-height: 3.25rem;
+  place-items: center;
+  border: 1px solid #e6dfd2;
+  background: #e6dfd2;
+  color: #141210;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+.engine-generate:hover {
+  background: transparent;
+  color: #e6dfd2;
+}
+
+.engine-ghost {
+  display: inline-flex;
+  min-height: 2.85rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid rgb(230 223 210 / 16%);
+  padding: 0 0.7rem;
+  color: #e6dfd2;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: border-color 250ms ease, background-color 250ms ease;
+}
+
+.engine-ghost:hover:not(:disabled) {
+  border-color: rgb(230 223 210 / 42%);
+  background: rgb(230 223 210 / 4%);
+}
+
+.engine-ghost:disabled,
+.engine-generate:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+@media (min-width: 768px) {
+  .engine-panel {
+    padding: 1.6rem 1.7rem 1.15rem;
+  }
+}
+
 @media (min-width: 640px) {
   .page-shell {
     width: min(100% - 3rem, 1440px);

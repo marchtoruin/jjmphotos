@@ -2,6 +2,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { Menu, X } from 'lucide-react'
 import { useEffect, useState, type PropsWithChildren } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { ObservationTrigger } from './ObservationTrigger'
 import { siteContent } from '../data/site'
 
 const navItems = [
@@ -94,6 +95,7 @@ export function Layout({ children }: PropsWithChildren) {
       </AnimatePresence>
 
       <main id="main-content">{children}</main>
+      <ObservationTrigger />
 
       <footer className="border-t border-white/6 py-8">
         <div className="page-shell flex flex-col gap-5 text-[0.8rem] text-mist sm:flex-row sm:items-end sm:justify-between">
@@ -101,7 +103,7 @@ export function Layout({ children }: PropsWithChildren) {
             <Link to="/" className="text-stone tracking-[0.16em]">JJM</Link>
             <p className="mt-1.5">Washington State</p>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 sm:pr-12">
             <a
               href={siteContent.contact.instagramUrl}
               target="_blank"
