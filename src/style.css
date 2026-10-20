@@ -237,6 +237,48 @@ a:focus-visible {
   border-color: #e6dfd2;
 }
 
+.lightbox-stage {
+  container-type: size;
+}
+
+.lightbox-print {
+  --mat-inline: clamp(1.15rem, 5.5cqmin, 4.25rem);
+  --mat-top: clamp(1.15rem, 5cqmin, 3.75rem);
+  --mat-bottom: clamp(1.45rem, 6.4cqmin, 4.85rem);
+  display: flex;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
+  max-height: 100%;
+  padding: var(--mat-top) var(--mat-inline) var(--mat-bottom);
+  background: #f6f3ec;
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 40%),
+    0 22px 60px rgb(0 0 0 / 38%);
+}
+
+.lightbox-print[data-orientation='portrait'] {
+  --mat-inline: clamp(0.9rem, 3.6cqmin, 2.65rem);
+  --mat-top: clamp(1rem, 3.8cqmin, 2.85rem);
+  --mat-bottom: clamp(1.25rem, 4.8cqmin, 3.55rem);
+}
+
+.lightbox-print[data-orientation='panoramic'] {
+  --mat-inline: clamp(0.7rem, 2.1cqmin, 1.7rem);
+  --mat-top: clamp(1.15rem, 5.4cqmin, 3.35rem);
+  --mat-bottom: clamp(1.4rem, 6.6cqmin, 4.15rem);
+}
+
+.lightbox-photo {
+  width: min(
+    calc(100cqw - (var(--mat-inline) * 2)),
+    calc((100cqh - var(--mat-top) - var(--mat-bottom)) * var(--ratio, 1.5))
+  );
+  max-width: 100%;
+  max-height: calc(100cqh - var(--mat-top) - var(--mat-bottom));
+  box-shadow: 0 0 0 1px rgb(20 18 16 / 8%);
+}
+
 .skip-link {
   position: fixed;
   top: -4rem;

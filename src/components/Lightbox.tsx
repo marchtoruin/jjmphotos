@@ -1,7 +1,14 @@
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { ArrowLeft, ArrowRight, X } from 'lucide-react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { Photograph } from '../data/photography'
+
+function printOrientation(width: number, height: number) {
+  const ratio = width / height
+  if (ratio >= 2) return 'panoramic'
+  if (ratio < 1) return 'portrait'
+  return 'landscape'
+}
 
 interface LightboxProps {
   photos: Photograph[]
@@ -81,6 +88,8 @@ export function Lightbox({
     setFullImageLoaded(null)
   }, [photo?.id])
 
+  const orientation = photo ? printOrientation(photo.width, photo.height) : 'landscape'
+
   return (
     <AnimatePresence onExitComplete={onExited}>
       {photo && (
@@ -111,7 +120,7 @@ export function Lightbox({
           </div>
 
           <motion.div
-            className="relative flex min-h-0 flex-1 items-center justify-center px-5 md:px-20"
+            className="lightbox-stage relative flex min-h-0 flex-1 items-center justify-center px-5 md:px-20"
             drag={reduceMotion ? false : 'x'}
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={0.12}
@@ -123,24 +132,24 @@ export function Lightbox({
             <AnimatePresence initial={false} mode="wait">
               <motion.div
                 key={photo.id}
-                layoutId={sharedPhotoId === photo.id ? `photo-${photo.id}` : undefined}
-                className="relative max-h-full max-w-full overflow-hidden bg-void"
-                style={{
-                  aspectRatio: photo.aspectRatio,
-                  width: `min(100%, calc((100vh - 10.5rem) * ${photo.width / photo.height}))`,
-                }}
+                className="lightbox-print"
+                data-orientation={orientation}
+                style={{ '--ratio': photo.width / photo.height } as CSSProperties}
                 initial={reduceMotion || sharedPhotoId === photo.id ? false : { opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={
-                  reduceMotion
-                    ? { duration: 0 }
-                    : {
-                        layout: { type: 'spring', stiffness: 340, damping: 34 },
-                        opacity: { duration: 0.22 },
-                      }
-                }
+                transition={{ duration: reduceMotion ? 0 : 0.22 }}
               >
+                <motion.div
+                  layoutId={sharedPhotoId === photo.id ? `photo-${photo.id}` : undefined}
+                  className="lightbox-photo relative overflow-hidden bg-void"
+                  style={{ aspectRatio: photo.aspectRatio }}
+                  transition={
+                    reduceMotion
+                      ? { duration: 0 }
+                      : { layout: { type: 'spring', stiffness: 340, damping: 34 } }
+                  }
+                >
                 <img
                   src={previewSrc || photo.thumbnailSrc}
                   alt=""
@@ -164,6 +173,7 @@ export function Lightbox({
                   }}
                   draggable={false}
                 />
+                </motion.div>
               </motion.div>
             </AnimatePresence>
 
