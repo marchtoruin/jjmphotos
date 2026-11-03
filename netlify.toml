@@ -3,16 +3,13 @@
   publish = "dist"
 
 # Notesferatu is a separate static application. Keep these before the photo SPA.
+# Netlify normalizes trailing slashes when matching. Rewrite both forms directly;
+# redirecting this path to itself with a slash causes a redirect loop.
 [[redirects]]
   from = "/notesferatu"
-  to = "/notesferatu/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/notesferatu/"
   to = "/notesferatu/index.html"
   status = 200
+  force = true
 
 # Existing app assets shadow this rule; missing assets must not receive photo HTML.
 [[redirects]]
@@ -38,3 +35,8 @@
   [headers.values]
     Service-Worker-Allowed = "/notesferatu/"
     Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/notesferatu/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
