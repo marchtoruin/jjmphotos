@@ -2,7 +2,39 @@
   command = "npm run build"
   publish = "dist"
 
+# Notesferatu is a separate static application. Keep these before the photo SPA.
+[[redirects]]
+  from = "/notesferatu"
+  to = "/notesferatu/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/notesferatu/"
+  to = "/notesferatu/index.html"
+  status = 200
+
+# Existing app assets shadow this rule; missing assets must not receive photo HTML.
+[[redirects]]
+  from = "/notesferatu/*"
+  to = "/notesferatu/404.html"
+  status = 404
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/notesferatu/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+
+[[headers]]
+  for = "/notesferatu/sw.js"
+  [headers.values]
+    Service-Worker-Allowed = "/notesferatu/"
+    Cache-Control = "no-cache"
